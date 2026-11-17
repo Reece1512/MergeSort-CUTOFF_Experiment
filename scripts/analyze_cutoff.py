@@ -482,6 +482,7 @@ def plot_doubling(times: pd.DataFrame, campaign: str) -> Path:
     return save(figure, f"{campaign}_doubling.png")
 
 def main() -> int:
+    sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description="Analyze single-shot cutoff campaigns.")
     parser.add_argument("kind", choices=["pilot", "grid", "doubling"])
     parser.add_argument("--campaign", help="folder under results/ (default: pilot_ss, e1 or e4)")
