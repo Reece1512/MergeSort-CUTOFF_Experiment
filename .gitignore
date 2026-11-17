@@ -18,4 +18,3 @@ scripts/gc_check.py
 scripts/gc_parallel_check.py
 scripts/jit_check.py
 scripts/run_unattended.*
-README.md
