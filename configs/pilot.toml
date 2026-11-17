@@ -1,0 +1,21 @@
+name = "pilot_ss"
+shuffle_seed = 20261115
+
+[jmh]
+mode = "ss"
+warmup_iterations = 0
+measurement_iterations = 40
+forks = 4
+
+[[jmh.tiers]]
+max_n = 10_000
+measurement_iterations = 150
+forks = 4
+
+[variants]
+g1 = "-Xms1g -Xmx1g -XX:+AlwaysPreTouch"
+parallel = "-Xms1g -Xmx1g -XX:+AlwaysPreTouch -XX:+UseParallelGC"
+
+[[grid]]
+datasets = ["random_10000_s1", "random_100000_s1", "random_1000000_s1"]
+cutoffs = [0, 10, 32]

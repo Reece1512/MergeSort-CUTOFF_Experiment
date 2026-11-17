@@ -1,0 +1,29 @@
+name = "e4"
+shuffle_seed = 20261118
+
+jvm_args = "-Xms2g -Xmx2g -XX:+UseParallelGC"
+
+[jmh]
+mode = "ss"
+warmup_iterations = 20
+measurement_iterations = 10
+forks = 3
+
+[[jmh.tiers]]
+max_n = 31_250
+warmup_iterations = 100
+measurement_iterations = 30
+forks = 5
+
+[[jmh.tiers]]
+max_n = 125_000
+warmup_iterations = 40
+measurement_iterations = 15
+forks = 3
+
+[[grid]]
+datasets = [
+    "random_15625_s1", "random_31250_s1", "random_62500_s1", "random_125000_s1",
+    "random_250000_s1", "random_500000_s1", "random_1000000_s1", "random_2000000_s1",
+]
+cutoffs = [0, 7, 10, 16, 24, 40]

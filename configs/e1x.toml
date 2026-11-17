@@ -1,0 +1,28 @@
+name = "e1x"
+shuffle_seed = 20261119
+
+jvm_args = "-Xms2g -Xmx2g -XX:+UseParallelGC"
+
+[jmh]
+mode = "ss"
+warmup_iterations = 10
+measurement_iterations = 5
+forks = 3
+
+[[jmh.tiers]]
+max_n = 10_000
+warmup_iterations = 100
+measurement_iterations = 30
+forks = 3
+
+[[jmh.tiers]]
+max_n = 100_000
+warmup_iterations = 20
+measurement_iterations = 10
+forks = 3
+
+[[grid]]
+datasets = ["random_10000_s*", "random_100000_s*", "random_1000000_s*"]
+cutoffs = [40, 64, 65, 72, 80, 96, 112, 128, 160, 192, 224, 256, 320, 384, 448, 512]
+dedupe = true
+controls = [40, 64]
