@@ -1,6 +1,6 @@
 # MergeSort CUTOFF Experiment
 
-> **Thí nghiệm tìm CUTOFF tối ưu cho Mergesort** - Bài tập môn Cấu trúc dữ liệu và Giải thuật, Trường Đại học Công nghệ - ĐHQGHN.
+> **Thí nghiệm tìm CUTOFF tối ưu cho Mergesort**
 
 Mergesort (theo bài giảng) chuyển sang insertion sort khi đoạn con có độ dài không quá **CUTOFF**. Giáo trình dùng **CUTOFF** 7 hoặc 10. Repo này chứa code, cấu hình và script để đo thời gian sắp xếp bằng **JMH** với CUTOFF từ 0 đến 512, rồi tìm giá trị tốt nhất trên một máy cụ thể.
 
