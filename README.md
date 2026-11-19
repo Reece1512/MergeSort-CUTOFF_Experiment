@@ -127,6 +127,23 @@ Trước khi đo: cắm sạc, chọn chế độ hiệu năng cao nhất, đón
 py -3 scripts/run_experiment.py configs/<tên đợt>.toml
 ```
 
+> **Lưu ý về tên đợt:** Báo cáo đặt tên các đợt đo là 1, 1\*, 2, 3, 4. Khi chạy lệnh, mỗi đợt ứng với một file cấu hình trong `configs/`:
+>
+> | Đợt trong báo cáo | File cấu hình |
+> |:--:|:--|
+> | Pilot | `configs/pilot.toml` |
+> | 1 | `configs/e1.toml` |
+> | 1\* | `configs/e1x.toml` |
+> | 2 | `configs/e2.toml` |
+> | 4 | `configs/e4.toml` |
+>
+> Đợt 3 (đếm thao tác) không dùng file cấu hình, chạy bằng lệnh `java` ở bảng Danh sách Thí nghiệm.
+>
+> Ví dụ, để chạy đợt 1:
+> ```bash
+> py -3 scripts/run_experiment.py configs/e1.toml
+> ```
+
 ### Bước 5: Phân tích
 ```bash
 py -3 scripts/analyze_cutoff.py pilot
