@@ -1,0 +1,27 @@
+{
+  "captured_at_utc": "2026-11-15T16:42:17+00:00",
+  "os": "Windows-11-10.0.26300-SP0",
+  "python": "3.13.9",
+  "numpy": "2.3.5",
+  "java": "java version \"25.0.2\" 2026-01-20 LTS\nJava(TM) SE Runtime Environment (build 25.0.2+10-LTS-69)\nJava HotSpot(TM) 64-Bit Server VM (build 25.0.2+10-LTS-69, mixed mode, sharing)",
+  "sources_sha256": {
+    "src/main/java/cutoff/sort/MergeSort.java": "5eb1421981959358fc6dac4621dd39fa617f3d8b7b0554a98cbfbeebba0e37c0",
+    "src/jmh/java/cutoff/bench/SortBench.java": "08ece93cb23b21b8c79d1d693d69ecf8805b2b9cc7a40cdd72837d7fb03ef3f9"
+  },
+  "cpu": {
+    "Name": "AMD Ryzen 5 7235HS                             ",
+    "NumberOfCores": 4,
+    "NumberOfLogicalProcessors": 8,
+    "MaxClockSpeed": 3201,
+    "L2CacheSize": 2048,
+    "L3CacheSize": 8192
+  },
+  "ram_bytes": 12554305536,
+  "power": {
+    "ac_online": true,
+    "battery_percent": 98,
+    "battery_saver_on": false,
+    "active_scheme": "Power Scheme GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (Balanced)",
+    "power_mode": "best_performance"
+  }
+}

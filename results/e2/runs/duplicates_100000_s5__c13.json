@@ -1,0 +1,92 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "cutoff.bench.SortBench.sort",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "C:\\Program Files\\Java\\jdk-25.0.2\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Xms2g",
+            "-Xmx2g",
+            "-XX:+UseParallelGC"
+        ],
+        "jdkVersion" : "25.0.2",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "25.0.2+10-LTS-69",
+        "warmupIterations" : 20,
+        "warmupTime" : "single-shot",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 10,
+        "measurementTime" : "single-shot",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "copyMode" : "reuse",
+            "cutoff" : "13",
+            "dataset" : "duplicates_100000_s5"
+        },
+        "primaryMetric" : {
+            "score" : 12372.616666666667,
+            "scoreError" : 698.6312738792018,
+            "scoreConfidence" : [
+                11673.985392787465,
+                13071.247940545869
+            ],
+            "scorePercentiles" : {
+                "0.0" : 11420.6,
+                "50.0" : 12068.95,
+                "90.0" : 13041.91,
+                "95.0" : 15031.354999999996,
+                "99.0" : 17198.3,
+                "99.9" : 17198.3,
+                "99.99" : 17198.3,
+                "99.999" : 17198.3,
+                "99.9999" : 17198.3,
+                "100.0" : 17198.3
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    12531.8,
+                    12640.5,
+                    12490.6,
+                    13008.7,
+                    13045.6,
+                    12995.0,
+                    13258.4,
+                    12874.6,
+                    12508.8,
+                    12501.6
+                ],
+                [
+                    11433.7,
+                    11576.5,
+                    12672.1,
+                    11677.8,
+                    12345.8,
+                    11913.0,
+                    11974.5,
+                    12097.1,
+                    11904.4,
+                    11965.6
+                ],
+                [
+                    17198.3,
+                    11763.5,
+                    11578.6,
+                    11805.2,
+                    11998.2,
+                    12298.2,
+                    11816.9,
+                    12040.8,
+                    11420.6,
+                    11842.1
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

@@ -79,6 +79,14 @@ MergeSort-CUTOFF_Experiment/
 │
 ├── configs/                             # Cấu hình các đợt đo (pilot, e1, e1x, e2, e4)
 ├── data/manifest.csv                    # SHA-256 của từng file dữ liệu
+│
+├── results/
+│   ├── pilot_ss/, e1/, e1x/, e2/, e4/   # Kết quả đo thô (JSON của JMH, log, cấu hình máy)
+│   ├── e3/operations.csv                # Kết quả đếm thao tác
+│   ├── noise_check/                     # Kết quả kiểm tra nhiễu
+│   └── analysis_*/                      # Bảng phân tích (CSV và summary.md)
+├── report/figures/                      # Các hình trong báo cáo
+│
 ├── requirements.txt                     # Gói Python
 ├── pom.xml
 └── README.md
@@ -153,6 +161,26 @@ py -3 scripts/analyze_cutoff.py grid --campaign e2
 py -3 scripts/analyze_cutoff.py doubling
 ```
 Mỗi lệnh ghi bảng CSV và `summary.md` vào `results/analysis_<đợt>/`, hình vào `report/figures/`.
+
+> **Kiểm tra mà không cần đo lại:** kết quả đo thô của báo cáo đã có sẵn trong `results/`. Chỉ cần làm Bước 1 rồi chạy các lệnh phân tích ở trên là ra lại đúng các bảng và hình trong báo cáo.
+
+---
+
+## Kết quả trong Repo
+
+Các bảng và hình dưới đây là kết quả đo trên máy thực nghiệm, dùng trong báo cáo.
+
+| Trong báo cáo | Hình | Bảng phân tích | Kết quả đo thô |
+|:---|:---|:---|:---|
+| Pilot (Hình 1) | `report/figures/pilot_warmup.png` | `results/analysis_pilot_ss/` | `results/pilot_ss/` |
+| Đợt 1 (Hình 2, bảng kết quả chính, bootstrap) | `report/figures/e1_curves.png` | `results/analysis_e1/` | `results/e1/` |
+| Đợt 1\* (Hình 3) | `report/figures/e1+e1x_curves.png` | `results/analysis_e1+e1x/` | `results/e1/`, `results/e1x/` |
+| Đợt 2 (Hình 4) | `report/figures/e2_heatmap.png`, `report/figures/e2_curves.png` | `results/analysis_e2/` | `results/e2/` |
+| Đợt 3 | — | — | `results/e3/operations.csv` |
+| Đợt 4 (Hình 5) | `report/figures/e4_doubling.png` | `results/analysis_e4/` | `results/e4/` |
+| Kiểm tra nhiễu | — | — | `results/noise_check/` |
+
+Mỗi thư mục `analysis_*` có file `summary.md` tóm tắt kết quả, mở trực tiếp trên GitHub để xem.
 
 ---
 

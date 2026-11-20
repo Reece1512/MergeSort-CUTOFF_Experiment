@@ -1,0 +1,3575 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 548546,800 us/op
+# Warmup Iteration   2: 437466,800 us/op
+# Warmup Iteration   3: 430947,500 us/op
+# Warmup Iteration   4: 807101,800 us/op
+# Warmup Iteration   5: 549555,700 us/op
+# Warmup Iteration   6: 435983,800 us/op
+# Warmup Iteration   7: 419591,500 us/op
+# Warmup Iteration   8: 409866,500 us/op
+# Warmup Iteration   9: 380969,800 us/op
+# Warmup Iteration  10: 401719,300 us/op
+# Warmup Iteration  11: 410144,900 us/op
+# Warmup Iteration  12: 399413,000 us/op
+# Warmup Iteration  13: 432984,400 us/op
+# Warmup Iteration  14: 420045,700 us/op
+# Warmup Iteration  15: 386445,800 us/op
+# Warmup Iteration  16: 396764,700 us/op
+# Warmup Iteration  17: 410286,000 us/op
+# Warmup Iteration  18: 437185,500 us/op
+# Warmup Iteration  19: 448264,200 us/op
+# Warmup Iteration  20: 399726,700 us/op
+Iteration   1: 418932,600 us/op
+Iteration   2: 389220,300 us/op
+Iteration   3: 376003,300 us/op
+Iteration   4: 377147,100 us/op
+Iteration   5: 407686,800 us/op
+Iteration   6: 436229,300 us/op
+Iteration   7: 425866,500 us/op
+Iteration   8: 429252,900 us/op
+Iteration   9: 403402,200 us/op
+Iteration  10: 388051,600 us/op
+Iteration  11: 369878,600 us/op
+Iteration  12: 435844,000 us/op
+Iteration  13: 419285,300 us/op
+Iteration  14: 406970,300 us/op
+Iteration  15: 413265,600 us/op
+Iteration  16: 411609,000 us/op
+Iteration  17: 388041,200 us/op
+Iteration  18: 397128,100 us/op
+Iteration  19: 403101,000 us/op
+Iteration  20: 426025,400 us/op
+Iteration  21: 423186,600 us/op
+Iteration  22: 407152,900 us/op
+Iteration  23: 406329,900 us/op
+Iteration  24: 367734,200 us/op
+Iteration  25: 463562,700 us/op
+Iteration  26: 461469,200 us/op
+Iteration  27: 442672,800 us/op
+Iteration  28: 435306,200 us/op
+Iteration  29: 407799,800 us/op
+Iteration  30: 416028,200 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 411806,120 ±(99.9%) 16212,935 us/op
+
+  Histogram, us/op:
+    [360000,000, 370000,000) = 2 
+    [370000,000, 380000,000) = 2 
+    [380000,000, 390000,000) = 3 
+    [390000,000, 400000,000) = 1 
+    [400000,000, 410000,000) = 7 
+    [410000,000, 420000,000) = 5 
+    [420000,000, 430000,000) = 4 
+    [430000,000, 440000,000) = 3 
+    [440000,000, 450000,000) = 1 
+    [450000,000, 460000,000) = 0 
+
+  Percentiles, us/op:
+      p(0,0000) = 367734,200 us/op
+     p(50,0000) = 409704,400 us/op
+     p(90,0000) = 442028,450 us/op
+     p(95,0000) = 462411,275 us/op
+     p(99,0000) = 463562,700 us/op
+     p(99,9000) = 463562,700 us/op
+     p(99,9900) = 463562,700 us/op
+     p(99,9990) = 463562,700 us/op
+     p(99,9999) = 463562,700 us/op
+    p(100,0000) = 463562,700 us/op
+
+
+# Run complete. Total time: 00:00:22
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score       Error  Units
+SortBench.sort       reuse        10  random_1000000_s1    ss   30  411806,120 ± 16212,935  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan__random_1000000_s1__r3.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms1g -Xmx1g -XX:+AlwaysPreTouch -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 46954,600 us/op
+# Warmup Iteration   2: 129465,300 us/op
+# Warmup Iteration   3: 43470,200 us/op
+# Warmup Iteration   4: 23128,100 us/op
+# Warmup Iteration   5: 22467,400 us/op
+# Warmup Iteration   6: 21437,400 us/op
+# Warmup Iteration   7: 21258,000 us/op
+# Warmup Iteration   8: 19416,300 us/op
+# Warmup Iteration   9: 19965,000 us/op
+# Warmup Iteration  10: 19508,300 us/op
+# Warmup Iteration  11: 19519,100 us/op
+# Warmup Iteration  12: 22271,100 us/op
+# Warmup Iteration  13: 16790,200 us/op
+# Warmup Iteration  14: 16951,900 us/op
+# Warmup Iteration  15: 17369,400 us/op
+# Warmup Iteration  16: 15886,000 us/op
+# Warmup Iteration  17: 17352,400 us/op
+# Warmup Iteration  18: 16055,800 us/op
+# Warmup Iteration  19: 16411,300 us/op
+# Warmup Iteration  20: 16616,100 us/op
+Iteration   1: 16753,300 us/op
+Iteration   2: 16229,000 us/op
+Iteration   3: 18622,200 us/op
+Iteration   4: 17727,200 us/op
+Iteration   5: 19326,600 us/op
+Iteration   6: 17919,600 us/op
+Iteration   7: 17816,800 us/op
+Iteration   8: 18151,900 us/op
+Iteration   9: 18937,800 us/op
+Iteration  10: 19241,700 us/op
+Iteration  11: 19560,900 us/op
+Iteration  12: 21399,500 us/op
+Iteration  13: 17317,100 us/op
+Iteration  14: 16134,600 us/op
+Iteration  15: 16114,800 us/op
+Iteration  16: 16421,500 us/op
+Iteration  17: 18011,000 us/op
+Iteration  18: 17167,500 us/op
+Iteration  19: 16847,300 us/op
+Iteration  20: 15992,200 us/op
+Iteration  21: 17399,100 us/op
+Iteration  22: 16950,500 us/op
+Iteration  23: 16803,100 us/op
+Iteration  24: 18572,800 us/op
+Iteration  25: 18966,200 us/op
+Iteration  26: 16006,600 us/op
+Iteration  27: 16471,500 us/op
+Iteration  28: 18114,600 us/op
+Iteration  29: 16706,400 us/op
+Iteration  30: 18540,200 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  17674,117 ±(99.9%) 865,737 us/op
+
+  Histogram, us/op:
+    [15000,000, 15500,000) = 0 
+    [15500,000, 16000,000) = 1 
+    [16000,000, 16500,000) = 6 
+    [16500,000, 17000,000) = 5 
+    [17000,000, 17500,000) = 3 
+    [17500,000, 18000,000) = 3 
+    [18000,000, 18500,000) = 3 
+    [18500,000, 19000,000) = 5 
+    [19000,000, 19500,000) = 2 
+    [19500,000, 20000,000) = 1 
+    [20000,000, 20500,000) = 0 
+    [20500,000, 21000,000) = 0 
+    [21000,000, 21500,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) =  15992,200 us/op
+     p(50,0000) =  17563,150 us/op
+     p(90,0000) =  19318,110 us/op
+     p(95,0000) =  20388,270 us/op
+     p(99,0000) =  21399,500 us/op
+     p(99,9000) =  21399,500 us/op
+     p(99,9900) =  21399,500 us/op
+     p(99,9990) =  21399,500 us/op
+     p(99,9999) =  21399,500 us/op
+    p(100,0000) =  21399,500 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score     Error  Units
+SortBench.sort       reuse        10  random_100000_s1    ss   30  17674,117 ± 865,737  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\hien_tai__random_100000_s1__r1.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 55056,400 us/op
+# Warmup Iteration   2: 61753,200 us/op
+# Warmup Iteration   3: 50009,400 us/op
+# Warmup Iteration   4: 33848,800 us/op
+# Warmup Iteration   5: 34118,500 us/op
+# Warmup Iteration   6: 21119,000 us/op
+# Warmup Iteration   7: 18273,200 us/op
+# Warmup Iteration   8: 23752,000 us/op
+# Warmup Iteration   9: 24341,400 us/op
+# Warmup Iteration  10: 17996,400 us/op
+# Warmup Iteration  11: 24475,100 us/op
+# Warmup Iteration  12: 19602,200 us/op
+# Warmup Iteration  13: 20147,100 us/op
+# Warmup Iteration  14: 19188,100 us/op
+# Warmup Iteration  15: 19803,500 us/op
+# Warmup Iteration  16: 21171,900 us/op
+# Warmup Iteration  17: 19508,800 us/op
+# Warmup Iteration  18: 21279,100 us/op
+# Warmup Iteration  19: 19004,500 us/op
+# Warmup Iteration  20: 19118,400 us/op
+Iteration   1: 21379,600 us/op
+Iteration   2: 21775,900 us/op
+Iteration   3: 22701,100 us/op
+Iteration   4: 20714,300 us/op
+Iteration   5: 22024,200 us/op
+Iteration   6: 21099,700 us/op
+Iteration   7: 21891,400 us/op
+Iteration   8: 20906,600 us/op
+Iteration   9: 20331,700 us/op
+Iteration  10: 21800,000 us/op
+Iteration  11: 22976,600 us/op
+Iteration  12: 21033,900 us/op
+Iteration  13: 20423,200 us/op
+Iteration  14: 20092,800 us/op
+Iteration  15: 22857,800 us/op
+Iteration  16: 19247,300 us/op
+Iteration  17: 20603,100 us/op
+Iteration  18: 22860,400 us/op
+Iteration  19: 22372,300 us/op
+Iteration  20: 23139,300 us/op
+Iteration  21: 21930,600 us/op
+Iteration  22: 23281,000 us/op
+Iteration  23: 23083,400 us/op
+Iteration  24: 19853,900 us/op
+Iteration  25: 20385,100 us/op
+Iteration  26: 18800,200 us/op
+Iteration  27: 21205,400 us/op
+Iteration  28: 19339,700 us/op
+Iteration  29: 23299,000 us/op
+Iteration  30: 22436,300 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  21461,527 ±(99.9%) 868,752 us/op
+
+  Histogram, us/op:
+    [18000,000, 18500,000) = 0 
+    [18500,000, 19000,000) = 1 
+    [19000,000, 19500,000) = 2 
+    [19500,000, 20000,000) = 1 
+    [20000,000, 20500,000) = 4 
+    [20500,000, 21000,000) = 3 
+    [21000,000, 21500,000) = 4 
+    [21500,000, 22000,000) = 4 
+    [22000,000, 22500,000) = 3 
+    [22500,000, 23000,000) = 4 
+    [23000,000, 23500,000) = 4 
+
+  Percentiles, us/op:
+      p(0,0000) =  18800,200 us/op
+     p(50,0000) =  21577,750 us/op
+     p(90,0000) =  23133,710 us/op
+     p(95,0000) =  23289,100 us/op
+     p(99,0000) =  23299,000 us/op
+     p(99,9000) =  23299,000 us/op
+     p(99,9900) =  23299,000 us/op
+     p(99,9990) =  23299,000 us/op
+     p(99,9999) =  23299,000 us/op
+    p(100,0000) =  23299,000 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score     Error  Units
+SortBench.sort       reuse        10  random_100000_s1    ss   30  21461,527 ± 868,752  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan__random_100000_s1__r3.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms1g -Xmx1g -XX:+AlwaysPreTouch -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 93563,100 us/op
+# Warmup Iteration   2: 84260,400 us/op
+# Warmup Iteration   3: 31992,800 us/op
+# Warmup Iteration   4: 25048,600 us/op
+# Warmup Iteration   5: 19119,400 us/op
+# Warmup Iteration   6: 19540,000 us/op
+# Warmup Iteration   7: 20254,100 us/op
+# Warmup Iteration   8: 19129,300 us/op
+# Warmup Iteration   9: 19381,700 us/op
+# Warmup Iteration  10: 23542,900 us/op
+# Warmup Iteration  11: 22360,900 us/op
+# Warmup Iteration  12: 22145,400 us/op
+# Warmup Iteration  13: 22193,000 us/op
+# Warmup Iteration  14: 20296,600 us/op
+# Warmup Iteration  15: 19365,500 us/op
+# Warmup Iteration  16: 18421,900 us/op
+# Warmup Iteration  17: 19483,000 us/op
+# Warmup Iteration  18: 18699,500 us/op
+# Warmup Iteration  19: 18705,500 us/op
+# Warmup Iteration  20: 18934,700 us/op
+Iteration   1: 20478,300 us/op
+Iteration   2: 18763,900 us/op
+Iteration   3: 20049,200 us/op
+Iteration   4: 18916,800 us/op
+Iteration   5: 19332,700 us/op
+Iteration   6: 21688,200 us/op
+Iteration   7: 18739,600 us/op
+Iteration   8: 19528,200 us/op
+Iteration   9: 19054,600 us/op
+Iteration  10: 18716,900 us/op
+Iteration  11: 19052,500 us/op
+Iteration  12: 20850,900 us/op
+Iteration  13: 18408,800 us/op
+Iteration  14: 19323,900 us/op
+Iteration  15: 22599,100 us/op
+Iteration  16: 21099,600 us/op
+Iteration  17: 19951,400 us/op
+Iteration  18: 21982,600 us/op
+Iteration  19: 21774,900 us/op
+Iteration  20: 20134,400 us/op
+Iteration  21: 20730,400 us/op
+Iteration  22: 20954,000 us/op
+Iteration  23: 19943,100 us/op
+Iteration  24: 20430,800 us/op
+Iteration  25: 19800,600 us/op
+Iteration  26: 19621,700 us/op
+Iteration  27: 20982,500 us/op
+Iteration  28: 19728,400 us/op
+Iteration  29: 20357,000 us/op
+Iteration  30: 21888,100 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  20162,770 ±(99.9%) 744,472 us/op
+
+  Histogram, us/op:
+    [18000,000, 18500,000) = 1 
+    [18500,000, 19000,000) = 4 
+    [19000,000, 19500,000) = 4 
+    [19500,000, 20000,000) = 6 
+    [20000,000, 20500,000) = 5 
+    [20500,000, 21000,000) = 4 
+    [21000,000, 21500,000) = 1 
+    [21500,000, 22000,000) = 4 
+    [22000,000, 22500,000) = 0 
+
+  Percentiles, us/op:
+      p(0,0000) =  18408,800 us/op
+     p(50,0000) =  20000,300 us/op
+     p(90,0000) =  21876,780 us/op
+     p(95,0000) =  22260,025 us/op
+     p(99,0000) =  22599,100 us/op
+     p(99,9000) =  22599,100 us/op
+     p(99,9900) =  22599,100 us/op
+     p(99,9990) =  22599,100 us/op
+     p(99,9999) =  22599,100 us/op
+    p(100,0000) =  22599,100 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score     Error  Units
+SortBench.sort       reuse        10  random_100000_s1    ss   30  20162,770 ± 744,472  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\hien_tai__random_100000_s1__r2.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms1g -Xmx1g -XX:+AlwaysPreTouch -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 491518,700 us/op
+# Warmup Iteration   2: 328745,800 us/op
+# Warmup Iteration   3: 326753,900 us/op
+# Warmup Iteration   4: 331044,200 us/op
+# Warmup Iteration   5: 365526,700 us/op
+# Warmup Iteration   6: 341573,800 us/op
+# Warmup Iteration   7: 387839,200 us/op
+# Warmup Iteration   8: 352489,800 us/op
+# Warmup Iteration   9: 347618,200 us/op
+# Warmup Iteration  10: 342481,300 us/op
+# Warmup Iteration  11: 328639,800 us/op
+# Warmup Iteration  12: 326312,000 us/op
+# Warmup Iteration  13: 377618,500 us/op
+# Warmup Iteration  14: 350687,600 us/op
+# Warmup Iteration  15: 359592,200 us/op
+# Warmup Iteration  16: 350978,700 us/op
+# Warmup Iteration  17: 352212,700 us/op
+# Warmup Iteration  18: 348947,400 us/op
+# Warmup Iteration  19: 358021,300 us/op
+# Warmup Iteration  20: 331309,600 us/op
+Iteration   1: 363255,800 us/op
+Iteration   2: 384693,400 us/op
+Iteration   3: 385524,600 us/op
+Iteration   4: 365255,400 us/op
+Iteration   5: 365461,200 us/op
+Iteration   6: 364703,700 us/op
+Iteration   7: 332173,600 us/op
+Iteration   8: 319237,400 us/op
+Iteration   9: 353309,300 us/op
+Iteration  10: 378271,700 us/op
+Iteration  11: 359386,100 us/op
+Iteration  12: 345534,600 us/op
+Iteration  13: 356128,600 us/op
+Iteration  14: 343573,700 us/op
+Iteration  15: 358602,900 us/op
+Iteration  16: 322306,000 us/op
+Iteration  17: 353770,900 us/op
+Iteration  18: 376590,300 us/op
+Iteration  19: 488416,200 us/op
+Iteration  20: 353807,800 us/op
+Iteration  21: 372963,800 us/op
+Iteration  22: 354686,300 us/op
+Iteration  23: 352395,800 us/op
+Iteration  24: 320361,100 us/op
+Iteration  25: 391499,500 us/op
+Iteration  26: 674799,900 us/op
+Iteration  27: 585436,200 us/op
+Iteration  28: 409394,300 us/op
+Iteration  29: 542070,000 us/op
+Iteration  30: 409144,000 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 389425,137 ±(99.9%) 53749,640 us/op
+
+  Histogram, us/op:
+    [300000,000, 325000,000) = 3 
+    [325000,000, 350000,000) = 3 
+    [350000,000, 375000,000) = 13 
+    [375000,000, 400000,000) = 5 
+    [400000,000, 425000,000) = 2 
+    [425000,000, 450000,000) = 0 
+    [450000,000, 475000,000) = 0 
+    [475000,000, 500000,000) = 1 
+    [500000,000, 525000,000) = 0 
+    [525000,000, 550000,000) = 1 
+    [550000,000, 575000,000) = 0 
+    [575000,000, 600000,000) = 1 
+    [600000,000, 625000,000) = 0 
+    [625000,000, 650000,000) = 0 
+    [650000,000, 675000,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) = 319237,400 us/op
+     p(50,0000) = 363979,750 us/op
+     p(90,0000) = 536704,620 us/op
+     p(95,0000) = 625649,865 us/op
+     p(99,0000) = 674799,900 us/op
+     p(99,9000) = 674799,900 us/op
+     p(99,9900) = 674799,900 us/op
+     p(99,9990) = 674799,900 us/op
+     p(99,9999) = 674799,900 us/op
+    p(100,0000) = 674799,900 us/op
+
+
+# Run complete. Total time: 00:00:19
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score       Error  Units
+SortBench.sort       reuse        10  random_1000000_s1    ss   30  389425,137 ± 53749,640  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\hien_tai__random_1000000_s1__r3.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = clone, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 136424,400 us/op
+# Warmup Iteration   2: 117902,500 us/op
+# Warmup Iteration   3: 27741,500 us/op
+# Warmup Iteration   4: 34481,700 us/op
+# Warmup Iteration   5: 31085,600 us/op
+# Warmup Iteration   6: 28647,500 us/op
+# Warmup Iteration   7: 25460,600 us/op
+# Warmup Iteration   8: 23959,100 us/op
+# Warmup Iteration   9: 22848,500 us/op
+# Warmup Iteration  10: 25315,600 us/op
+# Warmup Iteration  11: 21771,900 us/op
+# Warmup Iteration  12: 18797,200 us/op
+# Warmup Iteration  13: 20243,000 us/op
+# Warmup Iteration  14: 20319,900 us/op
+# Warmup Iteration  15: 19330,500 us/op
+# Warmup Iteration  16: 19342,300 us/op
+# Warmup Iteration  17: 19400,700 us/op
+# Warmup Iteration  18: 19455,500 us/op
+# Warmup Iteration  19: 19085,200 us/op
+# Warmup Iteration  20: 20673,300 us/op
+Iteration   1: 21471,300 us/op
+Iteration   2: 18818,200 us/op
+Iteration   3: 21598,400 us/op
+Iteration   4: 19962,100 us/op
+Iteration   5: 21927,500 us/op
+Iteration   6: 21020,700 us/op
+Iteration   7: 19482,500 us/op
+Iteration   8: 20275,400 us/op
+Iteration   9: 19702,100 us/op
+Iteration  10: 19570,900 us/op
+Iteration  11: 18976,500 us/op
+Iteration  12: 19754,300 us/op
+Iteration  13: 19619,800 us/op
+Iteration  14: 18799,000 us/op
+Iteration  15: 20111,700 us/op
+Iteration  16: 20684,700 us/op
+Iteration  17: 21078,000 us/op
+Iteration  18: 21261,700 us/op
+Iteration  19: 20444,000 us/op
+Iteration  20: 20969,200 us/op
+Iteration  21: 20701,600 us/op
+Iteration  22: 18565,600 us/op
+Iteration  23: 18724,400 us/op
+Iteration  24: 22858,500 us/op
+Iteration  25: 19858,800 us/op
+Iteration  26: 19243,800 us/op
+Iteration  27: 18770,800 us/op
+Iteration  28: 18490,400 us/op
+Iteration  29: 20163,000 us/op
+Iteration  30: 21694,000 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  20153,297 ±(99.9%) 759,526 us/op
+
+  Histogram, us/op:
+    [18000,000, 18500,000) = 1 
+    [18500,000, 19000,000) = 6 
+    [19000,000, 19500,000) = 2 
+    [19500,000, 20000,000) = 6 
+    [20000,000, 20500,000) = 4 
+    [20500,000, 21000,000) = 3 
+    [21000,000, 21500,000) = 4 
+    [21500,000, 22000,000) = 3 
+    [22000,000, 22500,000) = 0 
+
+  Percentiles, us/op:
+      p(0,0000) =  18490,400 us/op
+     p(50,0000) =  20036,900 us/op
+     p(90,0000) =  21684,440 us/op
+     p(95,0000) =  22346,450 us/op
+     p(99,0000) =  22858,500 us/op
+     p(99,9000) =  22858,500 us/op
+     p(99,9900) =  22858,500 us/op
+     p(99,9990) =  22858,500 us/op
+     p(99,9999) =  22858,500 us/op
+    p(100,0000) =  22858,500 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score     Error  Units
+SortBench.sort       clone        10  random_100000_s1    ss   30  20153,297 ± 759,526  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan_clone__random_100000_s1__r1.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms1g -Xmx1g -XX:+AlwaysPreTouch -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 497253,400 us/op
+# Warmup Iteration   2: 330283,000 us/op
+# Warmup Iteration   3: 334907,900 us/op
+# Warmup Iteration   4: 333574,100 us/op
+# Warmup Iteration   5: 324864,600 us/op
+# Warmup Iteration   6: 328643,200 us/op
+# Warmup Iteration   7: 346571,900 us/op
+# Warmup Iteration   8: 320579,900 us/op
+# Warmup Iteration   9: 322763,900 us/op
+# Warmup Iteration  10: 328929,100 us/op
+# Warmup Iteration  11: 333025,100 us/op
+# Warmup Iteration  12: 344521,200 us/op
+# Warmup Iteration  13: 350499,300 us/op
+# Warmup Iteration  14: 333712,500 us/op
+# Warmup Iteration  15: 343665,100 us/op
+# Warmup Iteration  16: 324878,100 us/op
+# Warmup Iteration  17: 335051,200 us/op
+# Warmup Iteration  18: 310272,300 us/op
+# Warmup Iteration  19: 333775,500 us/op
+# Warmup Iteration  20: 345450,500 us/op
+Iteration   1: 342157,700 us/op
+Iteration   2: 341675,800 us/op
+Iteration   3: 339952,200 us/op
+Iteration   4: 368485,800 us/op
+Iteration   5: 319003,500 us/op
+Iteration   6: 338343,400 us/op
+Iteration   7: 367612,200 us/op
+Iteration   8: 318965,800 us/op
+Iteration   9: 328610,000 us/op
+Iteration  10: 334993,500 us/op
+Iteration  11: 331462,300 us/op
+Iteration  12: 383096,300 us/op
+Iteration  13: 319636,600 us/op
+Iteration  14: 333093,200 us/op
+Iteration  15: 304689,200 us/op
+Iteration  16: 333602,900 us/op
+Iteration  17: 375510,600 us/op
+Iteration  18: 322937,800 us/op
+Iteration  19: 332932,100 us/op
+Iteration  20: 346064,400 us/op
+Iteration  21: 378114,100 us/op
+Iteration  22: 360690,700 us/op
+Iteration  23: 322892,800 us/op
+Iteration  24: 344832,400 us/op
+Iteration  25: 439937,300 us/op
+Iteration  26: 488624,000 us/op
+Iteration  27: 346680,500 us/op
+Iteration  28: 420195,600 us/op
+Iteration  29: 361778,200 us/op
+Iteration  30: 343248,200 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 352993,970 ±(99.9%) 26056,763 us/op
+
+  Histogram, us/op:
+    [300000,000, 312500,000) = 1 
+    [312500,000, 325000,000) = 5 
+    [325000,000, 337500,000) = 6 
+    [337500,000, 350000,000) = 8 
+    [350000,000, 362500,000) = 2 
+    [362500,000, 375000,000) = 2 
+    [375000,000, 387500,000) = 3 
+    [387500,000, 400000,000) = 0 
+    [400000,000, 412500,000) = 0 
+    [412500,000, 425000,000) = 1 
+    [425000,000, 437500,000) = 0 
+    [437500,000, 450000,000) = 1 
+    [450000,000, 462500,000) = 0 
+    [462500,000, 475000,000) = 0 
+    [475000,000, 487500,000) = 0 
+
+  Percentiles, us/op:
+      p(0,0000) = 304689,200 us/op
+     p(50,0000) = 341916,750 us/op
+     p(90,0000) = 416485,670 us/op
+     p(95,0000) = 461846,315 us/op
+     p(99,0000) = 488624,000 us/op
+     p(99,9000) = 488624,000 us/op
+     p(99,9900) = 488624,000 us/op
+     p(99,9990) = 488624,000 us/op
+     p(99,9999) = 488624,000 us/op
+    p(100,0000) = 488624,000 us/op
+
+
+# Run complete. Total time: 00:00:18
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score       Error  Units
+SortBench.sort       reuse        10  random_1000000_s1    ss   30  352993,970 ± 26056,763  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\hien_tai__random_1000000_s1__r0.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms1g -Xmx1g -XX:+AlwaysPreTouch -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 85746,900 us/op
+# Warmup Iteration   2: 47286,900 us/op
+# Warmup Iteration   3: 31864,700 us/op
+# Warmup Iteration   4: 63801,700 us/op
+# Warmup Iteration   5: 16594,000 us/op
+# Warmup Iteration   6: 16426,600 us/op
+# Warmup Iteration   7: 16943,200 us/op
+# Warmup Iteration   8: 15531,100 us/op
+# Warmup Iteration   9: 16544,800 us/op
+# Warmup Iteration  10: 15925,000 us/op
+# Warmup Iteration  11: 15813,800 us/op
+# Warmup Iteration  12: 15737,100 us/op
+# Warmup Iteration  13: 17568,400 us/op
+# Warmup Iteration  14: 16116,300 us/op
+# Warmup Iteration  15: 16617,100 us/op
+# Warmup Iteration  16: 18865,300 us/op
+# Warmup Iteration  17: 16107,900 us/op
+# Warmup Iteration  18: 15644,900 us/op
+# Warmup Iteration  19: 17053,200 us/op
+# Warmup Iteration  20: 15650,000 us/op
+Iteration   1: 15486,200 us/op
+Iteration   2: 16376,700 us/op
+Iteration   3: 16932,000 us/op
+Iteration   4: 16786,000 us/op
+Iteration   5: 17690,500 us/op
+Iteration   6: 18279,100 us/op
+Iteration   7: 17032,800 us/op
+Iteration   8: 16813,600 us/op
+Iteration   9: 17033,600 us/op
+Iteration  10: 16005,000 us/op
+Iteration  11: 17225,100 us/op
+Iteration  12: 16192,900 us/op
+Iteration  13: 17476,000 us/op
+Iteration  14: 16255,400 us/op
+Iteration  15: 18110,800 us/op
+Iteration  16: 18448,800 us/op
+Iteration  17: 17041,300 us/op
+Iteration  18: 18182,100 us/op
+Iteration  19: 17536,000 us/op
+Iteration  20: 19279,600 us/op
+Iteration  21: 19258,600 us/op
+Iteration  22: 18169,500 us/op
+Iteration  23: 20555,400 us/op
+Iteration  24: 18984,700 us/op
+Iteration  25: 19776,800 us/op
+Iteration  26: 21165,200 us/op
+Iteration  27: 17012,900 us/op
+Iteration  28: 17525,400 us/op
+Iteration  29: 18390,500 us/op
+Iteration  30: 19572,000 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  17819,817 ±(99.9%) 914,554 us/op
+
+  Histogram, us/op:
+    [15000,000, 15500,000) = 1 
+    [15500,000, 16000,000) = 0 
+    [16000,000, 16500,000) = 4 
+    [16500,000, 17000,000) = 3 
+    [17000,000, 17500,000) = 6 
+    [17500,000, 18000,000) = 3 
+    [18000,000, 18500,000) = 6 
+    [18500,000, 19000,000) = 1 
+    [19000,000, 19500,000) = 2 
+    [19500,000, 20000,000) = 2 
+    [20000,000, 20500,000) = 0 
+    [20500,000, 21000,000) = 1 
+    [21000,000, 21500,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) =  15486,200 us/op
+     p(50,0000) =  17530,700 us/op
+     p(90,0000) =  19756,320 us/op
+     p(95,0000) =  20829,810 us/op
+     p(99,0000) =  21165,200 us/op
+     p(99,9000) =  21165,200 us/op
+     p(99,9900) =  21165,200 us/op
+     p(99,9990) =  21165,200 us/op
+     p(99,9999) =  21165,200 us/op
+    p(100,0000) =  21165,200 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score     Error  Units
+SortBench.sort       reuse        10  random_100000_s1    ss   30  17819,817 ± 914,554  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\hien_tai__random_100000_s1__r3.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 432647,200 us/op
+# Warmup Iteration   2: 289293,100 us/op
+# Warmup Iteration   3: 285150,100 us/op
+# Warmup Iteration   4: 286521,600 us/op
+# Warmup Iteration   5: 324038,500 us/op
+# Warmup Iteration   6: 309791,700 us/op
+# Warmup Iteration   7: 320190,200 us/op
+# Warmup Iteration   8: 303749,800 us/op
+# Warmup Iteration   9: 297955,100 us/op
+# Warmup Iteration  10: 300429,100 us/op
+# Warmup Iteration  11: 291847,500 us/op
+# Warmup Iteration  12: 315051,400 us/op
+# Warmup Iteration  13: 292886,100 us/op
+# Warmup Iteration  14: 313448,500 us/op
+# Warmup Iteration  15: 302643,700 us/op
+# Warmup Iteration  16: 326289,700 us/op
+# Warmup Iteration  17: 303576,900 us/op
+# Warmup Iteration  18: 323653,800 us/op
+# Warmup Iteration  19: 329138,600 us/op
+# Warmup Iteration  20: 302145,500 us/op
+Iteration   1: 290686,900 us/op
+Iteration   2: 285338,500 us/op
+Iteration   3: 300660,900 us/op
+Iteration   4: 302958,800 us/op
+Iteration   5: 357650,000 us/op
+Iteration   6: 310885,500 us/op
+Iteration   7: 306362,300 us/op
+Iteration   8: 324252,700 us/op
+Iteration   9: 309605,100 us/op
+Iteration  10: 295599,200 us/op
+Iteration  11: 296925,400 us/op
+Iteration  12: 331467,400 us/op
+Iteration  13: 284113,200 us/op
+Iteration  14: 327865,100 us/op
+Iteration  15: 311883,400 us/op
+Iteration  16: 306583,100 us/op
+Iteration  17: 305775,800 us/op
+Iteration  18: 321820,800 us/op
+Iteration  19: 309955,300 us/op
+Iteration  20: 281057,900 us/op
+Iteration  21: 303918,100 us/op
+Iteration  22: 295775,800 us/op
+Iteration  23: 318942,500 us/op
+Iteration  24: 321013,400 us/op
+Iteration  25: 298622,700 us/op
+Iteration  26: 300092,900 us/op
+Iteration  27: 304005,500 us/op
+Iteration  28: 307134,700 us/op
+Iteration  29: 298915,200 us/op
+Iteration  30: 341372,300 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 308374,680 ±(99.9%) 11224,249 us/op
+
+  Histogram, us/op:
+    [280000,000, 285000,000) = 2 
+    [285000,000, 290000,000) = 1 
+    [290000,000, 295000,000) = 1 
+    [295000,000, 300000,000) = 5 
+    [300000,000, 305000,000) = 5 
+    [305000,000, 310000,000) = 6 
+    [310000,000, 315000,000) = 2 
+    [315000,000, 320000,000) = 1 
+    [320000,000, 325000,000) = 3 
+    [325000,000, 330000,000) = 1 
+    [330000,000, 335000,000) = 1 
+    [335000,000, 340000,000) = 0 
+    [340000,000, 345000,000) = 1 
+    [345000,000, 350000,000) = 0 
+    [350000,000, 355000,000) = 0 
+
+  Percentiles, us/op:
+      p(0,0000) = 281057,900 us/op
+     p(50,0000) = 306069,050 us/op
+     p(90,0000) = 331107,170 us/op
+     p(95,0000) = 348697,265 us/op
+     p(99,0000) = 357650,000 us/op
+     p(99,9000) = 357650,000 us/op
+     p(99,9900) = 357650,000 us/op
+     p(99,9990) = 357650,000 us/op
+     p(99,9999) = 357650,000 us/op
+    p(100,0000) = 357650,000 us/op
+
+
+# Run complete. Total time: 00:00:16
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score       Error  Units
+SortBench.sort       reuse        10  random_1000000_s1    ss   30  308374,680 ± 11224,249  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan__random_1000000_s1__r2.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms1g -Xmx1g -XX:+AlwaysPreTouch -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 517971,400 us/op
+# Warmup Iteration   2: 528448,900 us/op
+# Warmup Iteration   3: 399038,200 us/op
+# Warmup Iteration   4: 455960,600 us/op
+# Warmup Iteration   5: 403170,800 us/op
+# Warmup Iteration   6: 392737,500 us/op
+# Warmup Iteration   7: 368150,400 us/op
+# Warmup Iteration   8: 306490,500 us/op
+# Warmup Iteration   9: 308959,300 us/op
+# Warmup Iteration  10: 384716,300 us/op
+# Warmup Iteration  11: 356704,100 us/op
+# Warmup Iteration  12: 401767,000 us/op
+# Warmup Iteration  13: 344525,700 us/op
+# Warmup Iteration  14: 362492,000 us/op
+# Warmup Iteration  15: 304023,100 us/op
+# Warmup Iteration  16: 303868,100 us/op
+# Warmup Iteration  17: 309449,700 us/op
+# Warmup Iteration  18: 316869,600 us/op
+# Warmup Iteration  19: 325456,000 us/op
+# Warmup Iteration  20: 273440,100 us/op
+Iteration   1: 319048,200 us/op
+Iteration   2: 286928,500 us/op
+Iteration   3: 313251,000 us/op
+Iteration   4: 321882,300 us/op
+Iteration   5: 313517,000 us/op
+Iteration   6: 296125,200 us/op
+Iteration   7: 310293,500 us/op
+Iteration   8: 320799,400 us/op
+Iteration   9: 300503,300 us/op
+Iteration  10: 298889,000 us/op
+Iteration  11: 303814,100 us/op
+Iteration  12: 328715,900 us/op
+Iteration  13: 311081,400 us/op
+Iteration  14: 314183,100 us/op
+Iteration  15: 310841,800 us/op
+Iteration  16: 314178,100 us/op
+Iteration  17: 318834,600 us/op
+Iteration  18: 307960,200 us/op
+Iteration  19: 287250,300 us/op
+Iteration  20: 287385,600 us/op
+Iteration  21: 291134,400 us/op
+Iteration  22: 313122,700 us/op
+Iteration  23: 322263,800 us/op
+Iteration  24: 296842,400 us/op
+Iteration  25: 320788,700 us/op
+Iteration  26: 325749,400 us/op
+Iteration  27: 304863,700 us/op
+Iteration  28: 328070,500 us/op
+Iteration  29: 264395,100 us/op
+Iteration  30: 317827,600 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 308351,360 ±(99.9%) 9850,357 us/op
+
+  Histogram, us/op:
+    [260000,000, 265000,000) = 1 
+    [265000,000, 270000,000) = 0 
+    [270000,000, 275000,000) = 0 
+    [275000,000, 280000,000) = 0 
+    [280000,000, 285000,000) = 0 
+    [285000,000, 290000,000) = 3 
+    [290000,000, 295000,000) = 1 
+    [295000,000, 300000,000) = 3 
+    [300000,000, 305000,000) = 3 
+    [305000,000, 310000,000) = 1 
+    [310000,000, 315000,000) = 8 
+    [315000,000, 320000,000) = 3 
+    [320000,000, 325000,000) = 4 
+
+  Percentiles, us/op:
+      p(0,0000) = 264395,100 us/op
+     p(50,0000) = 312102,050 us/op
+     p(90,0000) = 325400,840 us/op
+     p(95,0000) = 328360,930 us/op
+     p(99,0000) = 328715,900 us/op
+     p(99,9000) = 328715,900 us/op
+     p(99,9900) = 328715,900 us/op
+     p(99,9990) = 328715,900 us/op
+     p(99,9999) = 328715,900 us/op
+    p(100,0000) = 328715,900 us/op
+
+
+# Run complete. Total time: 00:00:17
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score      Error  Units
+SortBench.sort       reuse        10  random_1000000_s1    ss   30  308351,360 ± 9850,357  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\hien_tai__random_1000000_s1__r1.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 83609,300 us/op
+# Warmup Iteration   2: 52494,400 us/op
+# Warmup Iteration   3: 38772,900 us/op
+# Warmup Iteration   4: 20793,900 us/op
+# Warmup Iteration   5: 18793,700 us/op
+# Warmup Iteration   6: 21194,300 us/op
+# Warmup Iteration   7: 17890,100 us/op
+# Warmup Iteration   8: 20589,000 us/op
+# Warmup Iteration   9: 16854,000 us/op
+# Warmup Iteration  10: 16740,100 us/op
+# Warmup Iteration  11: 15852,900 us/op
+# Warmup Iteration  12: 16727,200 us/op
+# Warmup Iteration  13: 18686,400 us/op
+# Warmup Iteration  14: 16037,500 us/op
+# Warmup Iteration  15: 18100,500 us/op
+# Warmup Iteration  16: 19073,500 us/op
+# Warmup Iteration  17: 16420,000 us/op
+# Warmup Iteration  18: 16489,800 us/op
+# Warmup Iteration  19: 16432,300 us/op
+# Warmup Iteration  20: 18084,100 us/op
+Iteration   1: 19107,100 us/op
+Iteration   2: 16127,800 us/op
+Iteration   3: 16354,600 us/op
+Iteration   4: 15747,000 us/op
+Iteration   5: 17643,600 us/op
+Iteration   6: 17490,000 us/op
+Iteration   7: 16516,500 us/op
+Iteration   8: 16955,500 us/op
+Iteration   9: 16866,600 us/op
+Iteration  10: 22209,900 us/op
+Iteration  11: 15764,100 us/op
+Iteration  12: 16289,900 us/op
+Iteration  13: 16701,000 us/op
+Iteration  14: 16879,800 us/op
+Iteration  15: 15923,600 us/op
+Iteration  16: 16780,300 us/op
+Iteration  17: 16385,500 us/op
+Iteration  18: 18683,800 us/op
+Iteration  19: 17769,700 us/op
+Iteration  20: 17645,400 us/op
+Iteration  21: 18470,400 us/op
+Iteration  22: 17673,700 us/op
+Iteration  23: 16143,000 us/op
+Iteration  24: 16604,100 us/op
+Iteration  25: 17023,700 us/op
+Iteration  26: 17088,100 us/op
+Iteration  27: 18469,000 us/op
+Iteration  28: 16359,200 us/op
+Iteration  29: 16734,300 us/op
+Iteration  30: 16503,300 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  17163,683 ±(99.9%) 863,124 us/op
+
+  Histogram, us/op:
+    [15000,000, 15500,000) = 0 
+    [15500,000, 16000,000) = 3 
+    [16000,000, 16500,000) = 6 
+    [16500,000, 17000,000) = 9 
+    [17000,000, 17500,000) = 3 
+    [17500,000, 18000,000) = 4 
+    [18000,000, 18500,000) = 2 
+    [18500,000, 19000,000) = 1 
+    [19000,000, 19500,000) = 1 
+    [19500,000, 20000,000) = 0 
+    [20000,000, 20500,000) = 0 
+    [20500,000, 21000,000) = 0 
+    [21000,000, 21500,000) = 0 
+    [21500,000, 22000,000) = 0 
+    [22000,000, 22500,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) =  15747,000 us/op
+     p(50,0000) =  16823,450 us/op
+     p(90,0000) =  18662,460 us/op
+     p(95,0000) =  20503,360 us/op
+     p(99,0000) =  22209,900 us/op
+     p(99,9000) =  22209,900 us/op
+     p(99,9900) =  22209,900 us/op
+     p(99,9990) =  22209,900 us/op
+     p(99,9999) =  22209,900 us/op
+    p(100,0000) =  22209,900 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score     Error  Units
+SortBench.sort       reuse        10  random_100000_s1    ss   30  17163,683 ± 863,124  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan__random_100000_s1__r1.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = clone, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 476921,000 us/op
+# Warmup Iteration   2: 381801,700 us/op
+# Warmup Iteration   3: 375448,300 us/op
+# Warmup Iteration   4: 380696,700 us/op
+# Warmup Iteration   5: 396379,200 us/op
+# Warmup Iteration   6: 343873,400 us/op
+# Warmup Iteration   7: 364190,700 us/op
+# Warmup Iteration   8: 370821,300 us/op
+# Warmup Iteration   9: 397344,900 us/op
+# Warmup Iteration  10: 381331,400 us/op
+# Warmup Iteration  11: 375295,600 us/op
+# Warmup Iteration  12: 392904,500 us/op
+# Warmup Iteration  13: 360217,600 us/op
+# Warmup Iteration  14: 376693,300 us/op
+# Warmup Iteration  15: 371025,400 us/op
+# Warmup Iteration  16: 380012,100 us/op
+# Warmup Iteration  17: 373419,700 us/op
+# Warmup Iteration  18: 381566,900 us/op
+# Warmup Iteration  19: 381385,700 us/op
+# Warmup Iteration  20: 420652,000 us/op
+Iteration   1: 377193,600 us/op
+Iteration   2: 357076,300 us/op
+Iteration   3: 369351,400 us/op
+Iteration   4: 376862,200 us/op
+Iteration   5: 383304,300 us/op
+Iteration   6: 394832,600 us/op
+Iteration   7: 405646,300 us/op
+Iteration   8: 408214,800 us/op
+Iteration   9: 378013,900 us/op
+Iteration  10: 371020,800 us/op
+Iteration  11: 395843,800 us/op
+Iteration  12: 386500,000 us/op
+Iteration  13: 378329,900 us/op
+Iteration  14: 419686,400 us/op
+Iteration  15: 396021,300 us/op
+Iteration  16: 361126,800 us/op
+Iteration  17: 348269,100 us/op
+Iteration  18: 355254,000 us/op
+Iteration  19: 376986,800 us/op
+Iteration  20: 370691,800 us/op
+Iteration  21: 411796,200 us/op
+Iteration  22: 385251,000 us/op
+Iteration  23: 397167,200 us/op
+Iteration  24: 362134,700 us/op
+Iteration  25: 367409,800 us/op
+Iteration  26: 340535,600 us/op
+Iteration  27: 382101,500 us/op
+Iteration  28: 380065,500 us/op
+Iteration  29: 395337,000 us/op
+Iteration  30: 388472,100 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 380683,223 ±(99.9%) 12585,537 us/op
+
+  Histogram, us/op:
+    [340000,000, 345000,000) = 1 
+    [345000,000, 350000,000) = 1 
+    [350000,000, 355000,000) = 0 
+    [355000,000, 360000,000) = 2 
+    [360000,000, 365000,000) = 2 
+    [365000,000, 370000,000) = 2 
+    [370000,000, 375000,000) = 2 
+    [375000,000, 380000,000) = 5 
+    [380000,000, 385000,000) = 3 
+    [385000,000, 390000,000) = 3 
+    [390000,000, 395000,000) = 1 
+    [395000,000, 400000,000) = 4 
+    [400000,000, 405000,000) = 0 
+    [405000,000, 410000,000) = 2 
+    [410000,000, 415000,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) = 340535,600 us/op
+     p(50,0000) = 379197,700 us/op
+     p(90,0000) = 407957,950 us/op
+     p(95,0000) = 415346,790 us/op
+     p(99,0000) = 419686,400 us/op
+     p(99,9000) = 419686,400 us/op
+     p(99,9900) = 419686,400 us/op
+     p(99,9990) = 419686,400 us/op
+     p(99,9999) = 419686,400 us/op
+    p(100,0000) = 419686,400 us/op
+
+
+# Run complete. Total time: 00:00:20
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score       Error  Units
+SortBench.sort       clone        10  random_1000000_s1    ss   30  380683,223 ± 12585,537  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan_clone__random_1000000_s1__r1.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 555892,100 us/op
+# Warmup Iteration   2: 365326,400 us/op
+# Warmup Iteration   3: 429760,100 us/op
+# Warmup Iteration   4: 378144,000 us/op
+# Warmup Iteration   5: 372562,900 us/op
+# Warmup Iteration   6: 337723,700 us/op
+# Warmup Iteration   7: 340805,300 us/op
+# Warmup Iteration   8: 333778,200 us/op
+# Warmup Iteration   9: 397292,600 us/op
+# Warmup Iteration  10: 366266,100 us/op
+# Warmup Iteration  11: 380057,900 us/op
+# Warmup Iteration  12: 363915,700 us/op
+# Warmup Iteration  13: 375513,800 us/op
+# Warmup Iteration  14: 351173,700 us/op
+# Warmup Iteration  15: 331557,600 us/op
+# Warmup Iteration  16: 322949,300 us/op
+# Warmup Iteration  17: 374021,200 us/op
+# Warmup Iteration  18: 387377,900 us/op
+# Warmup Iteration  19: 395114,500 us/op
+# Warmup Iteration  20: 429773,800 us/op
+Iteration   1: 445222,700 us/op
+Iteration   2: 413744,200 us/op
+Iteration   3: 431374,800 us/op
+Iteration   4: 462873,800 us/op
+Iteration   5: 428008,800 us/op
+Iteration   6: 395654,500 us/op
+Iteration   7: 391443,800 us/op
+Iteration   8: 387384,000 us/op
+Iteration   9: 355581,300 us/op
+Iteration  10: 370332,600 us/op
+Iteration  11: 340081,200 us/op
+Iteration  12: 387747,300 us/op
+Iteration  13: 364277,900 us/op
+Iteration  14: 384119,000 us/op
+Iteration  15: 375972,500 us/op
+Iteration  16: 372846,800 us/op
+Iteration  17: 344851,600 us/op
+Iteration  18: 347624,000 us/op
+Iteration  19: 471740,700 us/op
+Iteration  20: 479945,300 us/op
+Iteration  21: 476834,000 us/op
+Iteration  22: 448172,700 us/op
+Iteration  23: 378653,800 us/op
+Iteration  24: 351134,800 us/op
+Iteration  25: 431933,700 us/op
+Iteration  26: 429739,100 us/op
+Iteration  27: 381825,600 us/op
+Iteration  28: 375763,300 us/op
+Iteration  29: 375252,900 us/op
+Iteration  30: 404419,700 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 400151,880 ±(99.9%) 27599,186 us/op
+
+  Histogram, us/op:
+    [300000,000, 312500,000) = 0 
+    [312500,000, 325000,000) = 0 
+    [325000,000, 337500,000) = 0 
+    [337500,000, 350000,000) = 3 
+    [350000,000, 362500,000) = 2 
+    [362500,000, 375000,000) = 3 
+    [375000,000, 387500,000) = 7 
+    [387500,000, 400000,000) = 3 
+    [400000,000, 412500,000) = 1 
+    [412500,000, 425000,000) = 1 
+    [425000,000, 437500,000) = 4 
+    [437500,000, 450000,000) = 2 
+    [450000,000, 462500,000) = 0 
+    [462500,000, 475000,000) = 2 
+    [475000,000, 487500,000) = 2 
+
+  Percentiles, us/op:
+      p(0,0000) = 340081,200 us/op
+     p(50,0000) = 387565,650 us/op
+     p(90,0000) = 470854,010 us/op
+     p(95,0000) = 478234,085 us/op
+     p(99,0000) = 479945,300 us/op
+     p(99,9000) = 479945,300 us/op
+     p(99,9900) = 479945,300 us/op
+     p(99,9990) = 479945,300 us/op
+     p(99,9999) = 479945,300 us/op
+    p(100,0000) = 479945,300 us/op
+
+
+# Run complete. Total time: 00:00:20
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score       Error  Units
+SortBench.sort       reuse        10  random_1000000_s1    ss   30  400151,880 ± 27599,186  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan__random_1000000_s1__r1.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 75695,800 us/op
+# Warmup Iteration   2: 48750,000 us/op
+# Warmup Iteration   3: 24493,600 us/op
+# Warmup Iteration   4: 22688,100 us/op
+# Warmup Iteration   5: 20097,400 us/op
+# Warmup Iteration   6: 20964,000 us/op
+# Warmup Iteration   7: 22354,500 us/op
+# Warmup Iteration   8: 23393,600 us/op
+# Warmup Iteration   9: 21898,400 us/op
+# Warmup Iteration  10: 20182,300 us/op
+# Warmup Iteration  11: 21103,300 us/op
+# Warmup Iteration  12: 20759,200 us/op
+# Warmup Iteration  13: 20187,600 us/op
+# Warmup Iteration  14: 21475,200 us/op
+# Warmup Iteration  15: 21090,800 us/op
+# Warmup Iteration  16: 25981,100 us/op
+# Warmup Iteration  17: 23746,200 us/op
+# Warmup Iteration  18: 21821,300 us/op
+# Warmup Iteration  19: 25560,700 us/op
+# Warmup Iteration  20: 20187,400 us/op
+Iteration   1: 21325,000 us/op
+Iteration   2: 19646,000 us/op
+Iteration   3: 19654,400 us/op
+Iteration   4: 21695,000 us/op
+Iteration   5: 21521,100 us/op
+Iteration   6: 22741,100 us/op
+Iteration   7: 22359,300 us/op
+Iteration   8: 20851,300 us/op
+Iteration   9: 19060,000 us/op
+Iteration  10: 19703,700 us/op
+Iteration  11: 19714,900 us/op
+Iteration  12: 22936,900 us/op
+Iteration  13: 18810,400 us/op
+Iteration  14: 26573,900 us/op
+Iteration  15: 21247,700 us/op
+Iteration  16: 22413,100 us/op
+Iteration  17: 18497,600 us/op
+Iteration  18: 18881,600 us/op
+Iteration  19: 22885,700 us/op
+Iteration  20: 23375,900 us/op
+Iteration  21: 22866,400 us/op
+Iteration  22: 23345,400 us/op
+Iteration  23: 21033,600 us/op
+Iteration  24: 20523,000 us/op
+Iteration  25: 21143,200 us/op
+Iteration  26: 21810,300 us/op
+Iteration  27: 20680,000 us/op
+Iteration  28: 20913,400 us/op
+Iteration  29: 19912,400 us/op
+Iteration  30: 20167,000 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  21209,643 ±(99.9%) 1168,338 us/op
+
+  Histogram, us/op:
+    [18000,000, 18500,000) = 1 
+    [18500,000, 19000,000) = 2 
+    [19000,000, 19500,000) = 1 
+    [19500,000, 20000,000) = 5 
+    [20000,000, 20500,000) = 1 
+    [20500,000, 21000,000) = 4 
+    [21000,000, 21500,000) = 4 
+    [21500,000, 22000,000) = 3 
+    [22000,000, 22500,000) = 2 
+    [22500,000, 23000,000) = 4 
+    [23000,000, 23500,000) = 2 
+    [23500,000, 24000,000) = 0 
+    [24000,000, 24500,000) = 0 
+    [24500,000, 25000,000) = 0 
+    [25000,000, 25500,000) = 0 
+    [25500,000, 26000,000) = 0 
+    [26000,000, 26500,000) = 0 
+
+  Percentiles, us/op:
+      p(0,0000) =  18497,600 us/op
+     p(50,0000) =  21088,400 us/op
+     p(90,0000) =  23304,550 us/op
+     p(95,0000) =  24815,000 us/op
+     p(99,0000) =  26573,900 us/op
+     p(99,9000) =  26573,900 us/op
+     p(99,9900) =  26573,900 us/op
+     p(99,9990) =  26573,900 us/op
+     p(99,9999) =  26573,900 us/op
+    p(100,0000) =  26573,900 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score      Error  Units
+SortBench.sort       reuse        10  random_100000_s1    ss   30  21209,643 ± 1168,338  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan__random_100000_s1__r0.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, single-shot each
+# Measurement: 60 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SpinBench.spin
+# Parameters: (steps = 50000000)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 75724,600 us/op
+# Warmup Iteration   2: 75063,900 us/op
+# Warmup Iteration   3: 71856,500 us/op
+# Warmup Iteration   4: 71972,700 us/op
+# Warmup Iteration   5: 71844,600 us/op
+# Warmup Iteration   6: 73049,900 us/op
+# Warmup Iteration   7: 72242,900 us/op
+# Warmup Iteration   8: 72133,800 us/op
+# Warmup Iteration   9: 73479,600 us/op
+# Warmup Iteration  10: 71700,900 us/op
+Iteration   1: 71569,700 us/op
+Iteration   2: 71598,000 us/op
+Iteration   3: 71949,300 us/op
+Iteration   4: 72462,400 us/op
+Iteration   5: 72557,100 us/op
+Iteration   6: 72957,600 us/op
+Iteration   7: 71488,300 us/op
+Iteration   8: 71743,400 us/op
+Iteration   9: 71429,400 us/op
+Iteration  10: 72383,500 us/op
+Iteration  11: 73987,700 us/op
+Iteration  12: 73489,000 us/op
+Iteration  13: 72452,000 us/op
+Iteration  14: 72384,300 us/op
+Iteration  15: 71942,500 us/op
+Iteration  16: 71995,300 us/op
+Iteration  17: 71587,000 us/op
+Iteration  18: 71644,100 us/op
+Iteration  19: 72085,500 us/op
+Iteration  20: 72630,200 us/op
+Iteration  21: 71554,400 us/op
+Iteration  22: 72192,300 us/op
+Iteration  23: 73005,700 us/op
+Iteration  24: 71456,200 us/op
+Iteration  25: 73737,800 us/op
+Iteration  26: 72635,800 us/op
+Iteration  27: 71652,200 us/op
+Iteration  28: 72241,300 us/op
+Iteration  29: 73504,800 us/op
+Iteration  30: 71832,300 us/op
+Iteration  31: 71579,900 us/op
+Iteration  32: 71760,500 us/op
+Iteration  33: 71350,200 us/op
+Iteration  34: 71538,000 us/op
+Iteration  35: 71542,100 us/op
+Iteration  36: 71471,900 us/op
+Iteration  37: 71836,400 us/op
+Iteration  38: 71832,900 us/op
+Iteration  39: 71331,300 us/op
+Iteration  40: 71682,800 us/op
+Iteration  41: 72342,500 us/op
+Iteration  42: 72646,400 us/op
+Iteration  43: 74506,900 us/op
+Iteration  44: 73102,300 us/op
+Iteration  45: 71878,900 us/op
+Iteration  46: 72084,700 us/op
+Iteration  47: 72290,300 us/op
+Iteration  48: 72966,600 us/op
+Iteration  49: 74591,300 us/op
+Iteration  50: 72538,200 us/op
+Iteration  51: 74563,200 us/op
+Iteration  52: 72268,500 us/op
+Iteration  53: 71991,300 us/op
+Iteration  54: 73127,900 us/op
+Iteration  55: 78049,200 us/op
+Iteration  56: 76210,400 us/op
+Iteration  57: 71435,000 us/op
+Iteration  58: 71807,200 us/op
+Iteration  59: 72863,100 us/op
+Iteration  60: 72392,400 us/op
+
+
+Result "cutoff.bench.SpinBench.spin":
+  N = 60
+  mean =  72462,190 ±(99.9%) 539,690 us/op
+
+  Histogram, us/op:
+    [71000,000, 71500,000) = 7 
+    [71500,000, 72000,000) = 21 
+    [72000,000, 72500,000) = 12 
+    [72500,000, 73000,000) = 8 
+    [73000,000, 73500,000) = 4 
+    [73500,000, 74000,000) = 3 
+    [74000,000, 74500,000) = 0 
+    [74500,000, 75000,000) = 3 
+    [75000,000, 75500,000) = 0 
+    [75500,000, 76000,000) = 0 
+    [76000,000, 76500,000) = 1 
+    [76500,000, 77000,000) = 0 
+    [77000,000, 77500,000) = 0 
+    [77500,000, 78000,000) = 0 
+    [78000,000, 78500,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) =  71331,300 us/op
+     p(50,0000) =  72138,900 us/op
+     p(90,0000) =  73962,710 us/op
+     p(95,0000) =  74589,895 us/op
+     p(99,0000) =  78049,200 us/op
+     p(99,9000) =  78049,200 us/op
+     p(99,9900) =  78049,200 us/op
+     p(99,9990) =  78049,200 us/op
+     p(99,9999) =  78049,200 us/op
+    p(100,0000) =  78049,200 us/op
+
+
+# Run complete. Total time: 00:00:05
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark        (steps)  Mode  Cnt      Score     Error  Units
+SpinBench.spin  50000000    ss   60  72462,190 ± 539,690  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\spin__spin__r0.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = clone, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 70058,000 us/op
+# Warmup Iteration   2: 75769,600 us/op
+# Warmup Iteration   3: 20092,100 us/op
+# Warmup Iteration   4: 24726,300 us/op
+# Warmup Iteration   5: 20045,500 us/op
+# Warmup Iteration   6: 18594,100 us/op
+# Warmup Iteration   7: 18777,100 us/op
+# Warmup Iteration   8: 19133,000 us/op
+# Warmup Iteration   9: 18567,400 us/op
+# Warmup Iteration  10: 19482,800 us/op
+# Warmup Iteration  11: 18670,100 us/op
+# Warmup Iteration  12: 19431,800 us/op
+# Warmup Iteration  13: 18210,800 us/op
+# Warmup Iteration  14: 21596,500 us/op
+# Warmup Iteration  15: 19740,900 us/op
+# Warmup Iteration  16: 19270,900 us/op
+# Warmup Iteration  17: 18740,000 us/op
+# Warmup Iteration  18: 18870,800 us/op
+# Warmup Iteration  19: 21419,200 us/op
+# Warmup Iteration  20: 21527,300 us/op
+Iteration   1: 22898,800 us/op
+Iteration   2: 19442,600 us/op
+Iteration   3: 21158,600 us/op
+Iteration   4: 22977,000 us/op
+Iteration   5: 22376,200 us/op
+Iteration   6: 22213,700 us/op
+Iteration   7: 20142,800 us/op
+Iteration   8: 19788,700 us/op
+Iteration   9: 19979,200 us/op
+Iteration  10: 20471,700 us/op
+Iteration  11: 19144,900 us/op
+Iteration  12: 19051,300 us/op
+Iteration  13: 19315,600 us/op
+Iteration  14: 20722,600 us/op
+Iteration  15: 18468,300 us/op
+Iteration  16: 19056,100 us/op
+Iteration  17: 19005,400 us/op
+Iteration  18: 19495,400 us/op
+Iteration  19: 22393,400 us/op
+Iteration  20: 20569,300 us/op
+Iteration  21: 21235,200 us/op
+Iteration  22: 22322,600 us/op
+Iteration  23: 25110,000 us/op
+Iteration  24: 22397,800 us/op
+Iteration  25: 23057,600 us/op
+Iteration  26: 21698,100 us/op
+Iteration  27: 22068,200 us/op
+Iteration  28: 22792,100 us/op
+Iteration  29: 18916,800 us/op
+Iteration  30: 20239,200 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  20950,307 ±(99.9%) 1110,605 us/op
+
+  Histogram, us/op:
+    [18000,000, 18500,000) = 1 
+    [18500,000, 19000,000) = 1 
+    [19000,000, 19500,000) = 7 
+    [19500,000, 20000,000) = 2 
+    [20000,000, 20500,000) = 3 
+    [20500,000, 21000,000) = 2 
+    [21000,000, 21500,000) = 2 
+    [21500,000, 22000,000) = 1 
+    [22000,000, 22500,000) = 6 
+    [22500,000, 23000,000) = 3 
+    [23000,000, 23500,000) = 1 
+    [23500,000, 24000,000) = 0 
+    [24000,000, 24500,000) = 0 
+    [24500,000, 25000,000) = 0 
+    [25000,000, 25500,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) =  18468,300 us/op
+     p(50,0000) =  20645,950 us/op
+     p(90,0000) =  22969,180 us/op
+     p(95,0000) =  23981,180 us/op
+     p(99,0000) =  25110,000 us/op
+     p(99,9000) =  25110,000 us/op
+     p(99,9900) =  25110,000 us/op
+     p(99,9990) =  25110,000 us/op
+     p(99,9999) =  25110,000 us/op
+    p(100,0000) =  25110,000 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score      Error  Units
+SortBench.sort       clone        10  random_100000_s1    ss   30  20950,307 ± 1110,605  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan_clone__random_100000_s1__r3.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, single-shot each
+# Measurement: 60 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SpinBench.spin
+# Parameters: (steps = 50000000)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 77117,100 us/op
+# Warmup Iteration   2: 73991,200 us/op
+# Warmup Iteration   3: 71956,100 us/op
+# Warmup Iteration   4: 71633,000 us/op
+# Warmup Iteration   5: 72264,500 us/op
+# Warmup Iteration   6: 72331,400 us/op
+# Warmup Iteration   7: 73411,700 us/op
+# Warmup Iteration   8: 71592,600 us/op
+# Warmup Iteration   9: 71685,700 us/op
+# Warmup Iteration  10: 71948,500 us/op
+Iteration   1: 71748,400 us/op
+Iteration   2: 72287,000 us/op
+Iteration   3: 71798,800 us/op
+Iteration   4: 71401,900 us/op
+Iteration   5: 72816,300 us/op
+Iteration   6: 71957,000 us/op
+Iteration   7: 71824,600 us/op
+Iteration   8: 72021,400 us/op
+Iteration   9: 71873,700 us/op
+Iteration  10: 72904,500 us/op
+Iteration  11: 72748,300 us/op
+Iteration  12: 72494,000 us/op
+Iteration  13: 72969,100 us/op
+Iteration  14: 72338,700 us/op
+Iteration  15: 72674,600 us/op
+Iteration  16: 73452,400 us/op
+Iteration  17: 71552,200 us/op
+Iteration  18: 72502,000 us/op
+Iteration  19: 72222,700 us/op
+Iteration  20: 72032,400 us/op
+Iteration  21: 72296,000 us/op
+Iteration  22: 71713,500 us/op
+Iteration  23: 73396,500 us/op
+Iteration  24: 75060,200 us/op
+Iteration  25: 73196,200 us/op
+Iteration  26: 71559,500 us/op
+Iteration  27: 71944,400 us/op
+Iteration  28: 72247,500 us/op
+Iteration  29: 73444,600 us/op
+Iteration  30: 72030,000 us/op
+Iteration  31: 71601,000 us/op
+Iteration  32: 71832,500 us/op
+Iteration  33: 74117,600 us/op
+Iteration  34: 74529,600 us/op
+Iteration  35: 71795,600 us/op
+Iteration  36: 71642,800 us/op
+Iteration  37: 71337,800 us/op
+Iteration  38: 72875,000 us/op
+Iteration  39: 71511,500 us/op
+Iteration  40: 71266,300 us/op
+Iteration  41: 72981,700 us/op
+Iteration  42: 73783,500 us/op
+Iteration  43: 72397,900 us/op
+Iteration  44: 73437,200 us/op
+Iteration  45: 74664,300 us/op
+Iteration  46: 72743,100 us/op
+Iteration  47: 72766,500 us/op
+Iteration  48: 71532,500 us/op
+Iteration  49: 71687,200 us/op
+Iteration  50: 72147,200 us/op
+Iteration  51: 75115,900 us/op
+Iteration  52: 72455,700 us/op
+Iteration  53: 73003,900 us/op
+Iteration  54: 72595,400 us/op
+Iteration  55: 72181,700 us/op
+Iteration  56: 72902,700 us/op
+Iteration  57: 72696,300 us/op
+Iteration  58: 73360,600 us/op
+Iteration  59: 73084,800 us/op
+Iteration  60: 71828,100 us/op
+
+
+Result "cutoff.bench.SpinBench.spin":
+  N = 60
+  mean =  72539,738 ±(99.9%) 405,869 us/op
+
+  Histogram, us/op:
+    [71000,000, 71500,000) = 3 
+    [71500,000, 72000,000) = 17 
+    [72000,000, 72500,000) = 13 
+    [72500,000, 73000,000) = 13 
+    [73000,000, 73500,000) = 8 
+    [73500,000, 74000,000) = 1 
+    [74000,000, 74500,000) = 1 
+    [74500,000, 75000,000) = 2 
+    [75000,000, 75500,000) = 2 
+
+  Percentiles, us/op:
+      p(0,0000) =  71266,300 us/op
+     p(50,0000) =  72368,300 us/op
+     p(90,0000) =  73750,390 us/op
+     p(95,0000) =  74657,565 us/op
+     p(99,0000) =  75115,900 us/op
+     p(99,9000) =  75115,900 us/op
+     p(99,9900) =  75115,900 us/op
+     p(99,9990) =  75115,900 us/op
+     p(99,9999) =  75115,900 us/op
+    p(100,0000) =  75115,900 us/op
+
+
+# Run complete. Total time: 00:00:05
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark        (steps)  Mode  Cnt      Score     Error  Units
+SpinBench.spin  50000000    ss   60  72539,738 ± 405,869  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\spin__spin__r2.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = clone, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 447119,600 us/op
+# Warmup Iteration   2: 319417,200 us/op
+# Warmup Iteration   3: 291981,300 us/op
+# Warmup Iteration   4: 320145,200 us/op
+# Warmup Iteration   5: 309149,400 us/op
+# Warmup Iteration   6: 305641,300 us/op
+# Warmup Iteration   7: 330424,200 us/op
+# Warmup Iteration   8: 310568,500 us/op
+# Warmup Iteration   9: 310802,400 us/op
+# Warmup Iteration  10: 294394,300 us/op
+# Warmup Iteration  11: 312560,900 us/op
+# Warmup Iteration  12: 304757,600 us/op
+# Warmup Iteration  13: 310873,600 us/op
+# Warmup Iteration  14: 300986,300 us/op
+# Warmup Iteration  15: 310793,000 us/op
+# Warmup Iteration  16: 303506,300 us/op
+# Warmup Iteration  17: 309543,000 us/op
+# Warmup Iteration  18: 310657,200 us/op
+# Warmup Iteration  19: 296194,400 us/op
+# Warmup Iteration  20: 331713,500 us/op
+Iteration   1: 285844,300 us/op
+Iteration   2: 320672,900 us/op
+Iteration   3: 302106,200 us/op
+Iteration   4: 313924,600 us/op
+Iteration   5: 312183,200 us/op
+Iteration   6: 314003,700 us/op
+Iteration   7: 321372,800 us/op
+Iteration   8: 307436,800 us/op
+Iteration   9: 323600,500 us/op
+Iteration  10: 284323,100 us/op
+Iteration  11: 311271,100 us/op
+Iteration  12: 298498,800 us/op
+Iteration  13: 335629,000 us/op
+Iteration  14: 314280,600 us/op
+Iteration  15: 306021,400 us/op
+Iteration  16: 308775,000 us/op
+Iteration  17: 304901,400 us/op
+Iteration  18: 316403,200 us/op
+Iteration  19: 288042,500 us/op
+Iteration  20: 303270,700 us/op
+Iteration  21: 283028,000 us/op
+Iteration  22: 307734,200 us/op
+Iteration  23: 300285,700 us/op
+Iteration  24: 301122,100 us/op
+Iteration  25: 304417,200 us/op
+Iteration  26: 323130,900 us/op
+Iteration  27: 339331,100 us/op
+Iteration  28: 280322,400 us/op
+Iteration  29: 305041,500 us/op
+Iteration  30: 285872,200 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 306761,570 ±(99.9%) 9878,208 us/op
+
+  Histogram, us/op:
+    [280000,000, 285000,000) = 3 
+    [285000,000, 290000,000) = 3 
+    [290000,000, 295000,000) = 0 
+    [295000,000, 300000,000) = 1 
+    [300000,000, 305000,000) = 6 
+    [305000,000, 310000,000) = 5 
+    [310000,000, 315000,000) = 5 
+    [315000,000, 320000,000) = 1 
+    [320000,000, 325000,000) = 4 
+    [325000,000, 330000,000) = 0 
+    [330000,000, 335000,000) = 0 
+
+  Percentiles, us/op:
+      p(0,0000) = 280322,400 us/op
+     p(50,0000) = 306729,100 us/op
+     p(90,0000) = 323553,540 us/op
+     p(95,0000) = 337294,945 us/op
+     p(99,0000) = 339331,100 us/op
+     p(99,9000) = 339331,100 us/op
+     p(99,9900) = 339331,100 us/op
+     p(99,9990) = 339331,100 us/op
+     p(99,9999) = 339331,100 us/op
+    p(100,0000) = 339331,100 us/op
+
+
+# Run complete. Total time: 00:00:16
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score      Error  Units
+SortBench.sort       clone        10  random_1000000_s1    ss   30  306761,570 ± 9878,208  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan_clone__random_1000000_s1__r2.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms1g -Xmx1g -XX:+AlwaysPreTouch -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 81883,300 us/op
+# Warmup Iteration   2: 39650,600 us/op
+# Warmup Iteration   3: 29146,000 us/op
+# Warmup Iteration   4: 24647,700 us/op
+# Warmup Iteration   5: 20293,000 us/op
+# Warmup Iteration   6: 21867,200 us/op
+# Warmup Iteration   7: 19098,500 us/op
+# Warmup Iteration   8: 17597,700 us/op
+# Warmup Iteration   9: 17558,900 us/op
+# Warmup Iteration  10: 16938,200 us/op
+# Warmup Iteration  11: 18570,000 us/op
+# Warmup Iteration  12: 18643,700 us/op
+# Warmup Iteration  13: 17697,600 us/op
+# Warmup Iteration  14: 17134,400 us/op
+# Warmup Iteration  15: 16548,500 us/op
+# Warmup Iteration  16: 16540,100 us/op
+# Warmup Iteration  17: 16709,900 us/op
+# Warmup Iteration  18: 18035,400 us/op
+# Warmup Iteration  19: 18630,000 us/op
+# Warmup Iteration  20: 17660,000 us/op
+Iteration   1: 18609,800 us/op
+Iteration   2: 18590,700 us/op
+Iteration   3: 17558,900 us/op
+Iteration   4: 17994,400 us/op
+Iteration   5: 18427,300 us/op
+Iteration   6: 16788,200 us/op
+Iteration   7: 17448,000 us/op
+Iteration   8: 18995,600 us/op
+Iteration   9: 16730,700 us/op
+Iteration  10: 16661,000 us/op
+Iteration  11: 17437,000 us/op
+Iteration  12: 17799,000 us/op
+Iteration  13: 18375,000 us/op
+Iteration  14: 20100,900 us/op
+Iteration  15: 17520,000 us/op
+Iteration  16: 20801,300 us/op
+Iteration  17: 17283,000 us/op
+Iteration  18: 18518,000 us/op
+Iteration  19: 18341,200 us/op
+Iteration  20: 18736,000 us/op
+Iteration  21: 19552,400 us/op
+Iteration  22: 17587,000 us/op
+Iteration  23: 16359,300 us/op
+Iteration  24: 18855,900 us/op
+Iteration  25: 18647,300 us/op
+Iteration  26: 16515,000 us/op
+Iteration  27: 17847,000 us/op
+Iteration  28: 18252,400 us/op
+Iteration  29: 16410,200 us/op
+Iteration  30: 18607,000 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  18044,983 ±(99.9%) 715,374 us/op
+
+  Histogram, us/op:
+    [16000,000, 16500,000) = 2 
+    [16500,000, 17000,000) = 4 
+    [17000,000, 17500,000) = 3 
+    [17500,000, 18000,000) = 6 
+    [18000,000, 18500,000) = 4 
+    [18500,000, 19000,000) = 8 
+    [19000,000, 19500,000) = 0 
+    [19500,000, 20000,000) = 1 
+    [20000,000, 20500,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) =  16359,300 us/op
+     p(50,0000) =  18123,400 us/op
+     p(90,0000) =  19496,720 us/op
+     p(95,0000) =  20416,080 us/op
+     p(99,0000) =  20801,300 us/op
+     p(99,9000) =  20801,300 us/op
+     p(99,9900) =  20801,300 us/op
+     p(99,9990) =  20801,300 us/op
+     p(99,9999) =  20801,300 us/op
+    p(100,0000) =  20801,300 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score     Error  Units
+SortBench.sort       reuse        10  random_100000_s1    ss   30  18044,983 ± 715,374  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\hien_tai__random_100000_s1__r0.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = clone, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 104051,200 us/op
+# Warmup Iteration   2: 30807,900 us/op
+# Warmup Iteration   3: 20590,200 us/op
+# Warmup Iteration   4: 22504,800 us/op
+# Warmup Iteration   5: 22800,900 us/op
+# Warmup Iteration   6: 22710,300 us/op
+# Warmup Iteration   7: 21561,300 us/op
+# Warmup Iteration   8: 21150,000 us/op
+# Warmup Iteration   9: 20769,200 us/op
+# Warmup Iteration  10: 21112,100 us/op
+# Warmup Iteration  11: 22974,500 us/op
+# Warmup Iteration  12: 21954,000 us/op
+# Warmup Iteration  13: 20878,200 us/op
+# Warmup Iteration  14: 20666,600 us/op
+# Warmup Iteration  15: 22946,300 us/op
+# Warmup Iteration  16: 22552,900 us/op
+# Warmup Iteration  17: 21554,600 us/op
+# Warmup Iteration  18: 23173,800 us/op
+# Warmup Iteration  19: 23728,300 us/op
+# Warmup Iteration  20: 21875,300 us/op
+Iteration   1: 22230,700 us/op
+Iteration   2: 22956,500 us/op
+Iteration   3: 21969,100 us/op
+Iteration   4: 22644,400 us/op
+Iteration   5: 21881,700 us/op
+Iteration   6: 22412,200 us/op
+Iteration   7: 23328,900 us/op
+Iteration   8: 25661,300 us/op
+Iteration   9: 22137,600 us/op
+Iteration  10: 22709,500 us/op
+Iteration  11: 22324,400 us/op
+Iteration  12: 20754,800 us/op
+Iteration  13: 23299,700 us/op
+Iteration  14: 22232,000 us/op
+Iteration  15: 21587,000 us/op
+Iteration  16: 21523,500 us/op
+Iteration  17: 22681,000 us/op
+Iteration  18: 22521,500 us/op
+Iteration  19: 20752,200 us/op
+Iteration  20: 21984,300 us/op
+Iteration  21: 21864,000 us/op
+Iteration  22: 21098,700 us/op
+Iteration  23: 20367,500 us/op
+Iteration  24: 21936,900 us/op
+Iteration  25: 22608,300 us/op
+Iteration  26: 23519,400 us/op
+Iteration  27: 23207,700 us/op
+Iteration  28: 20384,400 us/op
+Iteration  29: 20483,500 us/op
+Iteration  30: 21047,500 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  22137,007 ±(99.9%) 746,892 us/op
+
+  Histogram, us/op:
+    [20000,000, 20500,000) = 3 
+    [20500,000, 21000,000) = 2 
+    [21000,000, 21500,000) = 2 
+    [21500,000, 22000,000) = 7 
+    [22000,000, 22500,000) = 5 
+    [22500,000, 23000,000) = 6 
+    [23000,000, 23500,000) = 3 
+    [23500,000, 24000,000) = 1 
+    [24000,000, 24500,000) = 0 
+    [24500,000, 25000,000) = 0 
+    [25000,000, 25500,000) = 0 
+
+  Percentiles, us/op:
+      p(0,0000) =  20367,500 us/op
+     p(50,0000) =  22184,150 us/op
+     p(90,0000) =  23325,980 us/op
+     p(95,0000) =  24483,255 us/op
+     p(99,0000) =  25661,300 us/op
+     p(99,9000) =  25661,300 us/op
+     p(99,9900) =  25661,300 us/op
+     p(99,9990) =  25661,300 us/op
+     p(99,9999) =  25661,300 us/op
+    p(100,0000) =  25661,300 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score     Error  Units
+SortBench.sort       clone        10  random_100000_s1    ss   30  22137,007 ± 746,892  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan_clone__random_100000_s1__r2.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = clone, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 431436,200 us/op
+# Warmup Iteration   2: 375596,300 us/op
+# Warmup Iteration   3: 379884,300 us/op
+# Warmup Iteration   4: 395784,900 us/op
+# Warmup Iteration   5: 386508,300 us/op
+# Warmup Iteration   6: 385887,800 us/op
+# Warmup Iteration   7: 372869,400 us/op
+# Warmup Iteration   8: 356305,800 us/op
+# Warmup Iteration   9: 342593,600 us/op
+# Warmup Iteration  10: 381082,600 us/op
+# Warmup Iteration  11: 382602,300 us/op
+# Warmup Iteration  12: 374175,000 us/op
+# Warmup Iteration  13: 406974,700 us/op
+# Warmup Iteration  14: 418056,400 us/op
+# Warmup Iteration  15: 367763,700 us/op
+# Warmup Iteration  16: 360690,100 us/op
+# Warmup Iteration  17: 351586,500 us/op
+# Warmup Iteration  18: 373612,600 us/op
+# Warmup Iteration  19: 381943,400 us/op
+# Warmup Iteration  20: 378399,900 us/op
+Iteration   1: 401482,300 us/op
+Iteration   2: 391772,600 us/op
+Iteration   3: 346896,500 us/op
+Iteration   4: 363455,400 us/op
+Iteration   5: 389431,800 us/op
+Iteration   6: 380508,900 us/op
+Iteration   7: 370236,100 us/op
+Iteration   8: 368037,200 us/op
+Iteration   9: 394403,500 us/op
+Iteration  10: 367668,200 us/op
+Iteration  11: 348579,900 us/op
+Iteration  12: 362704,200 us/op
+Iteration  13: 377440,000 us/op
+Iteration  14: 378867,900 us/op
+Iteration  15: 398684,300 us/op
+Iteration  16: 397347,100 us/op
+Iteration  17: 390170,500 us/op
+Iteration  18: 357377,100 us/op
+Iteration  19: 351969,600 us/op
+Iteration  20: 375588,100 us/op
+Iteration  21: 386613,400 us/op
+Iteration  22: 385030,300 us/op
+Iteration  23: 376630,400 us/op
+Iteration  24: 394531,300 us/op
+Iteration  25: 381945,100 us/op
+Iteration  26: 386694,500 us/op
+Iteration  27: 370082,900 us/op
+Iteration  28: 359942,500 us/op
+Iteration  29: 388260,500 us/op
+Iteration  30: 403850,200 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 378206,743 ±(99.9%) 10674,586 us/op
+
+  Histogram, us/op:
+    [340000,000, 345000,000) = 0 
+    [345000,000, 350000,000) = 2 
+    [350000,000, 355000,000) = 1 
+    [355000,000, 360000,000) = 2 
+    [360000,000, 365000,000) = 2 
+    [365000,000, 370000,000) = 2 
+    [370000,000, 375000,000) = 2 
+    [375000,000, 380000,000) = 4 
+    [380000,000, 385000,000) = 2 
+    [385000,000, 390000,000) = 5 
+    [390000,000, 395000,000) = 4 
+    [395000,000, 400000,000) = 2 
+    [400000,000, 405000,000) = 2 
+
+  Percentiles, us/op:
+      p(0,0000) = 346896,500 us/op
+     p(50,0000) = 379688,400 us/op
+     p(90,0000) = 398550,580 us/op
+     p(95,0000) = 402547,855 us/op
+     p(99,0000) = 403850,200 us/op
+     p(99,9000) = 403850,200 us/op
+     p(99,9900) = 403850,200 us/op
+     p(99,9990) = 403850,200 us/op
+     p(99,9999) = 403850,200 us/op
+    p(100,0000) = 403850,200 us/op
+
+
+# Run complete. Total time: 00:00:19
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score       Error  Units
+SortBench.sort       clone        10  random_1000000_s1    ss   30  378206,743 ± 10674,586  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan_clone__random_1000000_s1__r3.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, single-shot each
+# Measurement: 60 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SpinBench.spin
+# Parameters: (steps = 50000000)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 75589,000 us/op
+# Warmup Iteration   2: 74373,300 us/op
+# Warmup Iteration   3: 71577,000 us/op
+# Warmup Iteration   4: 71668,500 us/op
+# Warmup Iteration   5: 71275,400 us/op
+# Warmup Iteration   6: 71447,500 us/op
+# Warmup Iteration   7: 74428,000 us/op
+# Warmup Iteration   8: 71335,100 us/op
+# Warmup Iteration   9: 71527,200 us/op
+# Warmup Iteration  10: 74118,600 us/op
+Iteration   1: 71399,400 us/op
+Iteration   2: 71494,400 us/op
+Iteration   3: 71825,000 us/op
+Iteration   4: 71364,100 us/op
+Iteration   5: 73448,500 us/op
+Iteration   6: 72376,700 us/op
+Iteration   7: 71846,600 us/op
+Iteration   8: 72142,200 us/op
+Iteration   9: 72074,700 us/op
+Iteration  10: 71811,500 us/op
+Iteration  11: 72957,900 us/op
+Iteration  12: 73100,100 us/op
+Iteration  13: 73505,800 us/op
+Iteration  14: 74825,400 us/op
+Iteration  15: 72982,500 us/op
+Iteration  16: 71696,000 us/op
+Iteration  17: 73333,800 us/op
+Iteration  18: 74839,400 us/op
+Iteration  19: 75095,300 us/op
+Iteration  20: 72232,700 us/op
+Iteration  21: 72607,600 us/op
+Iteration  22: 71610,200 us/op
+Iteration  23: 71531,600 us/op
+Iteration  24: 71870,900 us/op
+Iteration  25: 71652,500 us/op
+Iteration  26: 71760,100 us/op
+Iteration  27: 77088,700 us/op
+Iteration  28: 71653,900 us/op
+Iteration  29: 71924,000 us/op
+Iteration  30: 71698,600 us/op
+Iteration  31: 72382,200 us/op
+Iteration  32: 71981,800 us/op
+Iteration  33: 74644,600 us/op
+Iteration  34: 71843,000 us/op
+Iteration  35: 71676,100 us/op
+Iteration  36: 71329,400 us/op
+Iteration  37: 71562,300 us/op
+Iteration  38: 71292,900 us/op
+Iteration  39: 71389,000 us/op
+Iteration  40: 77377,900 us/op
+Iteration  41: 74010,100 us/op
+Iteration  42: 71519,300 us/op
+Iteration  43: 71587,500 us/op
+Iteration  44: 71646,500 us/op
+Iteration  45: 71605,400 us/op
+Iteration  46: 71795,600 us/op
+Iteration  47: 71823,600 us/op
+Iteration  48: 71661,800 us/op
+Iteration  49: 72100,400 us/op
+Iteration  50: 73287,500 us/op
+Iteration  51: 72338,300 us/op
+Iteration  52: 72618,600 us/op
+Iteration  53: 71510,600 us/op
+Iteration  54: 72438,800 us/op
+Iteration  55: 72256,100 us/op
+Iteration  56: 73884,600 us/op
+Iteration  57: 72471,700 us/op
+Iteration  58: 75538,300 us/op
+Iteration  59: 72213,000 us/op
+Iteration  60: 71513,800 us/op
+
+
+Result "cutoff.bench.SpinBench.spin":
+  N = 60
+  mean =  72517,513 ±(99.9%) 608,036 us/op
+
+  Histogram, us/op:
+    [71000,000, 71500,000) = 6 
+    [71500,000, 72000,000) = 25 
+    [72000,000, 72500,000) = 11 
+    [72500,000, 73000,000) = 4 
+    [73000,000, 73500,000) = 4 
+    [73500,000, 74000,000) = 2 
+    [74000,000, 74500,000) = 1 
+    [74500,000, 75000,000) = 3 
+    [75000,000, 75500,000) = 1 
+    [75500,000, 76000,000) = 1 
+    [76000,000, 76500,000) = 0 
+    [76500,000, 77000,000) = 0 
+    [77000,000, 77500,000) = 2 
+
+  Percentiles, us/op:
+      p(0,0000) =  71292,900 us/op
+     p(50,0000) =  71952,900 us/op
+     p(90,0000) =  74807,320 us/op
+     p(95,0000) =  75516,150 us/op
+     p(99,0000) =  77377,900 us/op
+     p(99,9000) =  77377,900 us/op
+     p(99,9900) =  77377,900 us/op
+     p(99,9990) =  77377,900 us/op
+     p(99,9999) =  77377,900 us/op
+    p(100,0000) =  77377,900 us/op
+
+
+# Run complete. Total time: 00:00:05
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark        (steps)  Mode  Cnt      Score     Error  Units
+SpinBench.spin  50000000    ss   60  72517,513 ± 608,036  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\spin__spin__r1.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = clone, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 73315,300 us/op
+# Warmup Iteration   2: 75898,500 us/op
+# Warmup Iteration   3: 52108,400 us/op
+# Warmup Iteration   4: 32305,000 us/op
+# Warmup Iteration   5: 18540,500 us/op
+# Warmup Iteration   6: 18360,100 us/op
+# Warmup Iteration   7: 24963,700 us/op
+# Warmup Iteration   8: 19537,400 us/op
+# Warmup Iteration   9: 17633,600 us/op
+# Warmup Iteration  10: 19217,600 us/op
+# Warmup Iteration  11: 22346,100 us/op
+# Warmup Iteration  12: 21988,500 us/op
+# Warmup Iteration  13: 20262,200 us/op
+# Warmup Iteration  14: 20601,800 us/op
+# Warmup Iteration  15: 20037,600 us/op
+# Warmup Iteration  16: 19080,200 us/op
+# Warmup Iteration  17: 20228,600 us/op
+# Warmup Iteration  18: 19757,900 us/op
+# Warmup Iteration  19: 18891,800 us/op
+# Warmup Iteration  20: 18620,700 us/op
+Iteration   1: 19233,400 us/op
+Iteration   2: 19437,100 us/op
+Iteration   3: 19975,300 us/op
+Iteration   4: 21371,800 us/op
+Iteration   5: 19298,300 us/op
+Iteration   6: 19337,700 us/op
+Iteration   7: 20218,000 us/op
+Iteration   8: 21642,800 us/op
+Iteration   9: 20187,500 us/op
+Iteration  10: 18872,200 us/op
+Iteration  11: 19005,600 us/op
+Iteration  12: 19237,000 us/op
+Iteration  13: 19883,800 us/op
+Iteration  14: 19705,300 us/op
+Iteration  15: 21789,300 us/op
+Iteration  16: 20036,600 us/op
+Iteration  17: 21632,400 us/op
+Iteration  18: 19879,900 us/op
+Iteration  19: 20164,000 us/op
+Iteration  20: 19830,300 us/op
+Iteration  21: 22041,300 us/op
+Iteration  22: 22762,100 us/op
+Iteration  23: 25099,400 us/op
+Iteration  24: 20318,900 us/op
+Iteration  25: 22421,700 us/op
+Iteration  26: 21064,900 us/op
+Iteration  27: 22370,200 us/op
+Iteration  28: 21966,800 us/op
+Iteration  29: 20726,100 us/op
+Iteration  30: 19918,400 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  20647,603 ±(99.9%) 942,564 us/op
+
+  Histogram, us/op:
+    [18000,000, 18500,000) = 0 
+    [18500,000, 19000,000) = 1 
+    [19000,000, 19500,000) = 6 
+    [19500,000, 20000,000) = 6 
+    [20000,000, 20500,000) = 5 
+    [20500,000, 21000,000) = 1 
+    [21000,000, 21500,000) = 2 
+    [21500,000, 22000,000) = 4 
+    [22000,000, 22500,000) = 3 
+    [22500,000, 23000,000) = 1 
+    [23000,000, 23500,000) = 0 
+    [23500,000, 24000,000) = 0 
+    [24000,000, 24500,000) = 0 
+    [24500,000, 25000,000) = 0 
+    [25000,000, 25500,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) =  18872,200 us/op
+     p(50,0000) =  20175,750 us/op
+     p(90,0000) =  22416,550 us/op
+     p(95,0000) =  23813,885 us/op
+     p(99,0000) =  25099,400 us/op
+     p(99,9000) =  25099,400 us/op
+     p(99,9900) =  25099,400 us/op
+     p(99,9990) =  25099,400 us/op
+     p(99,9999) =  25099,400 us/op
+    p(100,0000) =  25099,400 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score     Error  Units
+SortBench.sort       clone        10  random_100000_s1    ss   30  20647,603 ± 942,564  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan_clone__random_100000_s1__r0.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_100000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 84088,600 us/op
+# Warmup Iteration   2: 66894,100 us/op
+# Warmup Iteration   3: 28352,500 us/op
+# Warmup Iteration   4: 21429,700 us/op
+# Warmup Iteration   5: 20232,200 us/op
+# Warmup Iteration   6: 18973,900 us/op
+# Warmup Iteration   7: 19027,100 us/op
+# Warmup Iteration   8: 18739,100 us/op
+# Warmup Iteration   9: 18321,100 us/op
+# Warmup Iteration  10: 18887,400 us/op
+# Warmup Iteration  11: 23847,800 us/op
+# Warmup Iteration  12: 20375,100 us/op
+# Warmup Iteration  13: 20215,000 us/op
+# Warmup Iteration  14: 20159,500 us/op
+# Warmup Iteration  15: 20496,200 us/op
+# Warmup Iteration  16: 18865,300 us/op
+# Warmup Iteration  17: 19695,100 us/op
+# Warmup Iteration  18: 19308,800 us/op
+# Warmup Iteration  19: 21626,400 us/op
+# Warmup Iteration  20: 19201,000 us/op
+Iteration   1: 22118,600 us/op
+Iteration   2: 20510,400 us/op
+Iteration   3: 21550,400 us/op
+Iteration   4: 20571,100 us/op
+Iteration   5: 21306,800 us/op
+Iteration   6: 19956,300 us/op
+Iteration   7: 19445,000 us/op
+Iteration   8: 21022,700 us/op
+Iteration   9: 19733,600 us/op
+Iteration  10: 20725,700 us/op
+Iteration  11: 19066,400 us/op
+Iteration  12: 18616,700 us/op
+Iteration  13: 20251,200 us/op
+Iteration  14: 19901,800 us/op
+Iteration  15: 19711,600 us/op
+Iteration  16: 19416,500 us/op
+Iteration  17: 19278,700 us/op
+Iteration  18: 18979,200 us/op
+Iteration  19: 18625,300 us/op
+Iteration  20: 19125,500 us/op
+Iteration  21: 18776,700 us/op
+Iteration  22: 19376,200 us/op
+Iteration  23: 19234,600 us/op
+Iteration  24: 19125,600 us/op
+Iteration  25: 18179,700 us/op
+Iteration  26: 19700,400 us/op
+Iteration  27: 20224,700 us/op
+Iteration  28: 21841,700 us/op
+Iteration  29: 20324,600 us/op
+Iteration  30: 21153,700 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean =  19928,380 ±(99.9%) 679,563 us/op
+
+  Histogram, us/op:
+    [18000,000, 18500,000) = 1 
+    [18500,000, 19000,000) = 4 
+    [19000,000, 19500,000) = 8 
+    [19500,000, 20000,000) = 5 
+    [20000,000, 20500,000) = 3 
+    [20500,000, 21000,000) = 3 
+    [21000,000, 21500,000) = 3 
+    [21500,000, 22000,000) = 2 
+    [22000,000, 22500,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) =  18179,700 us/op
+     p(50,0000) =  19722,600 us/op
+     p(90,0000) =  21526,040 us/op
+     p(95,0000) =  21966,305 us/op
+     p(99,0000) =  22118,600 us/op
+     p(99,9000) =  22118,600 us/op
+     p(99,9900) =  22118,600 us/op
+     p(99,9990) =  22118,600 us/op
+     p(99,9999) =  22118,600 us/op
+    p(100,0000) =  22118,600 us/op
+
+
+# Run complete. Total time: 00:00:01
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)         (dataset)  Mode  Cnt      Score     Error  Units
+SortBench.sort       reuse        10  random_100000_s1    ss   30  19928,380 ± 679,563  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan__random_100000_s1__r2.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 497652,400 us/op
+# Warmup Iteration   2: 369191,400 us/op
+# Warmup Iteration   3: 369600,900 us/op
+# Warmup Iteration   4: 357929,200 us/op
+# Warmup Iteration   5: 343350,300 us/op
+# Warmup Iteration   6: 350300,100 us/op
+# Warmup Iteration   7: 380364,200 us/op
+# Warmup Iteration   8: 406989,800 us/op
+# Warmup Iteration   9: 380205,300 us/op
+# Warmup Iteration  10: 378772,200 us/op
+# Warmup Iteration  11: 371149,000 us/op
+# Warmup Iteration  12: 346507,900 us/op
+# Warmup Iteration  13: 341421,000 us/op
+# Warmup Iteration  14: 369052,900 us/op
+# Warmup Iteration  15: 403604,300 us/op
+# Warmup Iteration  16: 375870,200 us/op
+# Warmup Iteration  17: 377040,100 us/op
+# Warmup Iteration  18: 377441,200 us/op
+# Warmup Iteration  19: 379612,000 us/op
+# Warmup Iteration  20: 350929,200 us/op
+Iteration   1: 352291,100 us/op
+Iteration   2: 380009,100 us/op
+Iteration   3: 403046,200 us/op
+Iteration   4: 371504,300 us/op
+Iteration   5: 364780,400 us/op
+Iteration   6: 369822,500 us/op
+Iteration   7: 385010,700 us/op
+Iteration   8: 352537,900 us/op
+Iteration   9: 384383,200 us/op
+Iteration  10: 419737,500 us/op
+Iteration  11: 377464,300 us/op
+Iteration  12: 365452,000 us/op
+Iteration  13: 375697,100 us/op
+Iteration  14: 371892,500 us/op
+Iteration  15: 356579,700 us/op
+Iteration  16: 349369,900 us/op
+Iteration  17: 349944,200 us/op
+Iteration  18: 391970,200 us/op
+Iteration  19: 371214,600 us/op
+Iteration  20: 362741,300 us/op
+Iteration  21: 395189,900 us/op
+Iteration  22: 370255,500 us/op
+Iteration  23: 372784,900 us/op
+Iteration  24: 367022,300 us/op
+Iteration  25: 371222,500 us/op
+Iteration  26: 372970,800 us/op
+Iteration  27: 370782,900 us/op
+Iteration  28: 363529,300 us/op
+Iteration  29: 381600,400 us/op
+Iteration  30: 373354,600 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 373138,727 ±(99.9%) 10348,760 us/op
+
+  Histogram, us/op:
+    [340000,000, 345000,000) = 0 
+    [345000,000, 350000,000) = 2 
+    [350000,000, 355000,000) = 2 
+    [355000,000, 360000,000) = 1 
+    [360000,000, 365000,000) = 3 
+    [365000,000, 370000,000) = 3 
+    [370000,000, 375000,000) = 9 
+    [375000,000, 380000,000) = 2 
+    [380000,000, 385000,000) = 3 
+    [385000,000, 390000,000) = 1 
+    [390000,000, 395000,000) = 1 
+    [395000,000, 400000,000) = 1 
+    [400000,000, 405000,000) = 1 
+    [405000,000, 410000,000) = 0 
+    [410000,000, 415000,000) = 0 
+
+  Percentiles, us/op:
+      p(0,0000) = 349369,900 us/op
+     p(50,0000) = 371363,400 us/op
+     p(90,0000) = 394867,930 us/op
+     p(95,0000) = 410557,285 us/op
+     p(99,0000) = 419737,500 us/op
+     p(99,9000) = 419737,500 us/op
+     p(99,9900) = 419737,500 us/op
+     p(99,9990) = 419737,500 us/op
+     p(99,9999) = 419737,500 us/op
+    p(100,0000) = 419737,500 us/op
+
+
+# Run complete. Total time: 00:00:19
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score       Error  Units
+SortBench.sort       reuse        10  random_1000000_s1    ss   30  373138,727 ± 10348,760  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan__random_1000000_s1__r0.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = clone, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 461257,500 us/op
+# Warmup Iteration   2: 342329,000 us/op
+# Warmup Iteration   3: 399979,300 us/op
+# Warmup Iteration   4: 333964,900 us/op
+# Warmup Iteration   5: 328035,800 us/op
+# Warmup Iteration   6: 488280,800 us/op
+# Warmup Iteration   7: 292275,900 us/op
+# Warmup Iteration   8: 290529,300 us/op
+# Warmup Iteration   9: 295894,800 us/op
+# Warmup Iteration  10: 339477,300 us/op
+# Warmup Iteration  11: 310368,400 us/op
+# Warmup Iteration  12: 311964,400 us/op
+# Warmup Iteration  13: 303988,900 us/op
+# Warmup Iteration  14: 315819,600 us/op
+# Warmup Iteration  15: 322783,900 us/op
+# Warmup Iteration  16: 267797,400 us/op
+# Warmup Iteration  17: 312520,900 us/op
+# Warmup Iteration  18: 294151,000 us/op
+# Warmup Iteration  19: 313392,200 us/op
+# Warmup Iteration  20: 325043,100 us/op
+Iteration   1: 312811,500 us/op
+Iteration   2: 301936,800 us/op
+Iteration   3: 338146,500 us/op
+Iteration   4: 325957,100 us/op
+Iteration   5: 274862,700 us/op
+Iteration   6: 306284,500 us/op
+Iteration   7: 282458,100 us/op
+Iteration   8: 310948,000 us/op
+Iteration   9: 311916,000 us/op
+Iteration  10: 308190,900 us/op
+Iteration  11: 318074,900 us/op
+Iteration  12: 322269,000 us/op
+Iteration  13: 334436,700 us/op
+Iteration  14: 297317,300 us/op
+Iteration  15: 316618,600 us/op
+Iteration  16: 318710,400 us/op
+Iteration  17: 291516,000 us/op
+Iteration  18: 315011,700 us/op
+Iteration  19: 307188,900 us/op
+Iteration  20: 306342,300 us/op
+Iteration  21: 312053,300 us/op
+Iteration  22: 314136,500 us/op
+Iteration  23: 293818,200 us/op
+Iteration  24: 312454,600 us/op
+Iteration  25: 286268,000 us/op
+Iteration  26: 279020,000 us/op
+Iteration  27: 307529,100 us/op
+Iteration  28: 311463,500 us/op
+Iteration  29: 331933,900 us/op
+Iteration  30: 304123,800 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 308459,960 ±(99.9%) 10291,428 us/op
+
+  Histogram, us/op:
+    [270000,000, 275000,000) = 1 
+    [275000,000, 280000,000) = 1 
+    [280000,000, 285000,000) = 1 
+    [285000,000, 290000,000) = 1 
+    [290000,000, 295000,000) = 2 
+    [295000,000, 300000,000) = 1 
+    [300000,000, 305000,000) = 2 
+    [305000,000, 310000,000) = 5 
+    [310000,000, 315000,000) = 7 
+    [315000,000, 320000,000) = 4 
+    [320000,000, 325000,000) = 1 
+    [325000,000, 330000,000) = 1 
+    [330000,000, 335000,000) = 2 
+
+  Percentiles, us/op:
+      p(0,0000) = 274862,700 us/op
+     p(50,0000) = 311205,750 us/op
+     p(90,0000) = 331336,220 us/op
+     p(95,0000) = 336106,110 us/op
+     p(99,0000) = 338146,500 us/op
+     p(99,9000) = 338146,500 us/op
+     p(99,9900) = 338146,500 us/op
+     p(99,9990) = 338146,500 us/op
+     p(99,9999) = 338146,500 us/op
+    p(100,0000) = 338146,500 us/op
+
+
+# Run complete. Total time: 00:00:16
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score       Error  Units
+SortBench.sort       clone        10  random_1000000_s1    ss   30  308459,960 ± 10291,428  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\tuan_clone__random_1000000_s1__r0.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms2g -Xmx2g -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 10 iterations, single-shot each
+# Measurement: 60 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SpinBench.spin
+# Parameters: (steps = 50000000)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 75381,800 us/op
+# Warmup Iteration   2: 75118,500 us/op
+# Warmup Iteration   3: 71228,900 us/op
+# Warmup Iteration   4: 72762,500 us/op
+# Warmup Iteration   5: 74858,300 us/op
+# Warmup Iteration   6: 72079,900 us/op
+# Warmup Iteration   7: 71429,100 us/op
+# Warmup Iteration   8: 71446,700 us/op
+# Warmup Iteration   9: 72369,400 us/op
+# Warmup Iteration  10: 75299,300 us/op
+Iteration   1: 73459,900 us/op
+Iteration   2: 72622,300 us/op
+Iteration   3: 71846,500 us/op
+Iteration   4: 71757,900 us/op
+Iteration   5: 71889,300 us/op
+Iteration   6: 74256,200 us/op
+Iteration   7: 71473,500 us/op
+Iteration   8: 71626,200 us/op
+Iteration   9: 76018,000 us/op
+Iteration  10: 72049,600 us/op
+Iteration  11: 71710,900 us/op
+Iteration  12: 73432,300 us/op
+Iteration  13: 74509,000 us/op
+Iteration  14: 71865,800 us/op
+Iteration  15: 71842,500 us/op
+Iteration  16: 72492,200 us/op
+Iteration  17: 72030,400 us/op
+Iteration  18: 71583,200 us/op
+Iteration  19: 73490,700 us/op
+Iteration  20: 72058,300 us/op
+Iteration  21: 72020,700 us/op
+Iteration  22: 72103,800 us/op
+Iteration  23: 72283,500 us/op
+Iteration  24: 71735,500 us/op
+Iteration  25: 72139,800 us/op
+Iteration  26: 73466,400 us/op
+Iteration  27: 73382,700 us/op
+Iteration  28: 74189,300 us/op
+Iteration  29: 73876,800 us/op
+Iteration  30: 72113,900 us/op
+Iteration  31: 72299,200 us/op
+Iteration  32: 72103,500 us/op
+Iteration  33: 71658,200 us/op
+Iteration  34: 72078,700 us/op
+Iteration  35: 71465,800 us/op
+Iteration  36: 71589,300 us/op
+Iteration  37: 71811,300 us/op
+Iteration  38: 71718,300 us/op
+Iteration  39: 71232,000 us/op
+Iteration  40: 71510,000 us/op
+Iteration  41: 72346,400 us/op
+Iteration  42: 72105,900 us/op
+Iteration  43: 71565,600 us/op
+Iteration  44: 72661,300 us/op
+Iteration  45: 71999,100 us/op
+Iteration  46: 71942,000 us/op
+Iteration  47: 72014,800 us/op
+Iteration  48: 73363,800 us/op
+Iteration  49: 73378,700 us/op
+Iteration  50: 71589,300 us/op
+Iteration  51: 71833,900 us/op
+Iteration  52: 72468,600 us/op
+Iteration  53: 72005,800 us/op
+Iteration  54: 72517,100 us/op
+Iteration  55: 72156,300 us/op
+Iteration  56: 71493,700 us/op
+Iteration  57: 72586,200 us/op
+Iteration  58: 72245,600 us/op
+Iteration  59: 72218,600 us/op
+Iteration  60: 73068,800 us/op
+
+
+Result "cutoff.bench.SpinBench.spin":
+  N = 60
+  mean =  72372,582 ±(99.9%) 404,644 us/op
+
+  Histogram, us/op:
+    [71000,000, 71500,000) = 4 
+    [71500,000, 72000,000) = 19 
+    [72000,000, 72500,000) = 20 
+    [72500,000, 73000,000) = 4 
+    [73000,000, 73500,000) = 8 
+    [73500,000, 74000,000) = 1 
+    [74000,000, 74500,000) = 2 
+    [74500,000, 75000,000) = 1 
+    [75000,000, 75500,000) = 0 
+    [75500,000, 76000,000) = 0 
+    [76000,000, 76500,000) = 1 
+
+  Percentiles, us/op:
+      p(0,0000) =  71232,000 us/op
+     p(50,0000) =  72091,100 us/op
+     p(90,0000) =  73488,270 us/op
+     p(95,0000) =  74252,855 us/op
+     p(99,0000) =  76018,000 us/op
+     p(99,9000) =  76018,000 us/op
+     p(99,9900) =  76018,000 us/op
+     p(99,9990) =  76018,000 us/op
+     p(99,9999) =  76018,000 us/op
+    p(100,0000) =  76018,000 us/op
+
+
+# Run complete. Total time: 00:00:05
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark        (steps)  Mode  Cnt      Score     Error  Units
+SpinBench.spin  50000000    ss   60  72372,582 ± 404,644  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\spin__spin__r3.json
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.2, Java HotSpot(TM) 64-Bit Server VM, 25.0.2+10-LTS-69
+# VM invoker: C:\Program Files\Java\jdk-25.0.2\bin\java.exe
+# VM options: -Xms1g -Xmx1g -XX:+AlwaysPreTouch -XX:+UseParallelGC
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 20 iterations, single-shot each
+# Measurement: 30 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: cutoff.bench.SortBench.sort
+# Parameters: (copyMode = reuse, cutoff = 10, dataset = random_1000000_s1)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:/C:/Users/ADMIN/DSA_Experiment/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 441793,100 us/op
+# Warmup Iteration   2: 323622,700 us/op
+# Warmup Iteration   3: 305235,900 us/op
+# Warmup Iteration   4: 294353,700 us/op
+# Warmup Iteration   5: 373296,800 us/op
+# Warmup Iteration   6: 335023,200 us/op
+# Warmup Iteration   7: 294418,100 us/op
+# Warmup Iteration   8: 282892,900 us/op
+# Warmup Iteration   9: 286023,900 us/op
+# Warmup Iteration  10: 282699,600 us/op
+# Warmup Iteration  11: 310371,700 us/op
+# Warmup Iteration  12: 319898,900 us/op
+# Warmup Iteration  13: 296613,700 us/op
+# Warmup Iteration  14: 346031,200 us/op
+# Warmup Iteration  15: 301542,100 us/op
+# Warmup Iteration  16: 318181,900 us/op
+# Warmup Iteration  17: 299624,900 us/op
+# Warmup Iteration  18: 288056,100 us/op
+# Warmup Iteration  19: 298551,200 us/op
+# Warmup Iteration  20: 292533,300 us/op
+Iteration   1: 304300,100 us/op
+Iteration   2: 310252,000 us/op
+Iteration   3: 344442,100 us/op
+Iteration   4: 292645,000 us/op
+Iteration   5: 332236,400 us/op
+Iteration   6: 308485,400 us/op
+Iteration   7: 303415,400 us/op
+Iteration   8: 310811,900 us/op
+Iteration   9: 271312,000 us/op
+Iteration  10: 311842,700 us/op
+Iteration  11: 296805,600 us/op
+Iteration  12: 318439,400 us/op
+Iteration  13: 303451,300 us/op
+Iteration  14: 336206,100 us/op
+Iteration  15: 301988,100 us/op
+Iteration  16: 299210,600 us/op
+Iteration  17: 285975,800 us/op
+Iteration  18: 290070,400 us/op
+Iteration  19: 283809,200 us/op
+Iteration  20: 304168,400 us/op
+Iteration  21: 381330,000 us/op
+Iteration  22: 315811,900 us/op
+Iteration  23: 343048,400 us/op
+Iteration  24: 384999,700 us/op
+Iteration  25: 363926,200 us/op
+Iteration  26: 280802,700 us/op
+Iteration  27: 287729,800 us/op
+Iteration  28: 281361,700 us/op
+Iteration  29: 310357,800 us/op
+Iteration  30: 328306,100 us/op
+
+
+Result "cutoff.bench.SortBench.sort":
+  N = 30
+  mean = 312918,073 ±(99.9%) 18980,849 us/op
+
+  Histogram, us/op:
+    [200000,000, 212500,000) = 0 
+    [212500,000, 225000,000) = 0 
+    [225000,000, 237500,000) = 0 
+    [237500,000, 250000,000) = 0 
+    [250000,000, 262500,000) = 0 
+    [262500,000, 275000,000) = 1 
+    [275000,000, 287500,000) = 4 
+    [287500,000, 300000,000) = 5 
+    [300000,000, 312500,000) = 10 
+    [312500,000, 325000,000) = 2 
+    [325000,000, 337500,000) = 3 
+    [337500,000, 350000,000) = 2 
+    [350000,000, 362500,000) = 0 
+    [362500,000, 375000,000) = 1 
+    [375000,000, 387500,000) = 2 
+
+  Percentiles, us/op:
+      p(0,0000) = 271312,000 us/op
+     p(50,0000) = 306392,750 us/op
+     p(90,0000) = 361977,790 us/op
+     p(95,0000) = 382981,365 us/op
+     p(99,0000) = 384999,700 us/op
+     p(99,9000) = 384999,700 us/op
+     p(99,9900) = 384999,700 us/op
+     p(99,9990) = 384999,700 us/op
+     p(99,9999) = 384999,700 us/op
+    p(100,0000) = 384999,700 us/op
+
+
+# Run complete. Total time: 00:00:16
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark       (copyMode)  (cutoff)          (dataset)  Mode  Cnt       Score       Error  Units
+SortBench.sort       reuse        10  random_1000000_s1    ss   30  312918,073 ± 18980,849  us/op
+
+Benchmark result is saved to C:\Users\ADMIN\DSA_Experiment\results\noise_check\hien_tai__random_1000000_s1__r2.json
