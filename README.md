@@ -11,6 +11,7 @@ Mergesort (theo bài giảng) chuyển sang insertion sort khi đoạn con có �
 | Tài liệu | Link |
 |:---|:---|
 | **Báo cáo thí nghiệm** | [Báo cáo](https://drive.google.com/file/d/1S_jDUNdvmhY5xuvuO0HyyFLMozWL77IV/view?usp=sharing) |
+| **Bộ dữ liệu thí nghiệm** | Thư mục [`data/`](data) (58 file `.bin`, kèm SHA-256 trong `data/manifest.csv`) |
 
 ---
 
@@ -78,7 +79,7 @@ MergeSort-CUTOFF_Experiment/
 │   └── noise_check.py                   # Kiểm tra nguồn gốc nhiễu đo
 │
 ├── configs/                             # Cấu hình các đợt đo (pilot, e1, e1x, e2, e4)
-├── data/manifest.csv                    # SHA-256 của từng file dữ liệu
+├── data/                                # 58 mảng dữ liệu .bin và manifest.csv (SHA-256 từng file)
 │
 ├── results/
 │   ├── pilot_ss/, e1/, e1x/, e2/, e4/   # Kết quả đo thô (JSON của JMH, log, cấu hình máy)
@@ -120,11 +121,15 @@ py -3 -m pip install -r requirements.txt
 mvn package
 ```
 
-### Bước 3: Sinh dữ liệu
-File `.bin` (khoảng 87 MB) không nằm trong repo. Sinh lại từ seed cố định và đối chiếu với SHA-256 trong `data/manifest.csv`:
+### Bước 3: Kiểm tra bộ dữ liệu
+Bộ dữ liệu đã dùng (58 file `.bin`, khoảng 87 MB) nằm sẵn trong `data/`. Đối chiếu với SHA-256 trong `data/manifest.csv`:
+```bash
+py -3 scripts/gen_data.py --verify
+```
+
+Các file này cũng có thể sinh lại y hệt từ seed cố định:
 ```bash
 py -3 scripts/gen_data.py
-py -3 scripts/gen_data.py --verify
 ```
 Gồm: random, duplicates (16 giá trị), nearly_sorted (1% phần tử bị đổi chỗ) với 5 seed, và ascending, descending, ở N = 10⁴, 10⁵, 10⁶; thêm dữ liệu random cho doubling test từ N = 15 625 tới 2 000 000.
 

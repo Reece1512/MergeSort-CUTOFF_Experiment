@@ -3,7 +3,6 @@ __pycache__/
 .idea/
 .vscode/
 *.iml
-data/*.bin
 docs/
 
 results/*
